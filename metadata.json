@@ -1,0 +1,6 @@
+{
+  "name": "Ngoại Giao Cây Tre - Bản Lĩnh & Khát Vọng Việt Nam",
+  "description": "Tác phẩm báo chí đa phương tiện longform về bản sắc, thành tựu và tầm vóc ngoại giao Việt Nam thời đại mới theo phong cách Shorthand scrollytelling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
