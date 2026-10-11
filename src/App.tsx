@@ -144,12 +144,12 @@ export default function App() {
             </p>
 
             <h2 className="font-serif text-2xl font-bold text-stone-900 mt-10 mb-4">
-              2. Những Mốc Son Hội Nhập Lịch Sử
+              2. Hoạt Động Tìm Kiếm Tại Công Viên Lê Thị Riêng
             </h2>
             <ul className="space-y-3 pl-4 border-l-2 border-stone-200">
               {TIMELINE_MILESTONES.slice(0, 5).map((m) => (
                 <li key={m.id} className="text-stone-700">
-                  <strong className="text-stone-900">{m.year}:</strong> {m.title} — {m.summary}
+                  <strong className="font-sans font-bold text-red-700">{m.year}:</strong> {m.title} — {m.summary}
                 </li>
               ))}
             </ul>

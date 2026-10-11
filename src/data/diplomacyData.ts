@@ -1,4 +1,10 @@
 import { TimelineMilestone, PartnerCountry, DiplomaticQuote, BambooPillar } from '../types/diplomacy';
+import imgMilestone0806 from '../assets/images/regenerated_image_1791718364394.jpg';
+import imgMilestone0623 from '../assets/images/regenerated_image_1791718370262.jpg';
+import imgMilestone0706 from '../assets/images/regenerated_image_1791718375968.jpg';
+import imgMilestone0821 from '../assets/images/regenerated_image_1791718377714.jpg';
+import imgMilestonePeriod from '../assets/images/regenerated_image_1791718379266.jpg';
+import imgMilestone1014 from '../assets/images/regenerated_image_1791718684904.jpg';
 
 export const BAMBOO_PILLARS: BambooPillar[] = [
   {
@@ -63,16 +69,16 @@ export const DIPLOMATIC_STATS = [
 export const TIMELINE_MILESTONES: TimelineMilestone[] = [
   {
     id: 'm-2026-06-08',
-    year: '08-06-2026',
+    year: '8-6-2026',
     title: 'Hội thảo xác minh thông tin về liệt sĩ, mộ liệt sĩ',
     subtitle: 'Khu vực Nghĩa địa Chí Hòa - Chợ Quán',
     category: 'xac-minh',
     categoryLabel: 'Xác minh thông tin',
     summary: 'Tổ chức Hội thảo xác minh thông tin về liệt sĩ, mộ liệt sĩ ở khu vực Nghĩa địa Chí Hòa - Chợ Quán làm cơ sở cho đợt tìm kiếm.',
     details: 'Ngày 8-6-2026, các cơ quan chức năng phối hợp tổ chức Hội thảo xác minh thông tin về liệt sĩ, mộ liệt sĩ ở khu vực Nghĩa địa Chí Hòa - Chợ Quán. Hội thảo thu thập, đối chiếu lời kể của các nhân chứng lịch sử, hồ sơ lưu trữ và tài liệu thực địa nhằm chuẩn bị đầy đủ căn cứ khoa học, pháp lý cho công tác tìm kiếm, quy tập.',
-    imageUrl: '/sggp/m-2026-06-08.webp',
-    imageCaption: 'Các đồng chí lãnh đạo và cơ quan chức năng trao đổi công tác xác minh thông tin liệt sĩ, mộ liệt sĩ.',
-    imageSource: 'Báo Sài Gòn Giải Phóng',
+    imageUrl: imgMilestone0806,
+    imageCaption: 'Phó Thủ tướng Phạm Thị Thanh Trà chủ trì hội thảo.',
+    imageSource: 'Ảnh: VIỆT DŨNG',
     metrics: [
       { label: 'Địa bàn khảo sát', value: 'Chí Hòa - Chợ Quán' },
       { label: 'Mục tiêu trọng tâm', value: 'Xác minh hồ sơ liệt sĩ' },
@@ -81,16 +87,16 @@ export const TIMELINE_MILESTONES: TimelineMilestone[] = [
   },
   {
     id: 'm-2026-06-23',
-    year: '23-06-2026',
+    year: '23-6-2026',
     title: 'Bắt đầu triển khai trên thực địa tại Công viên Lê Thị Riêng',
     subtitle: 'Khởi động công tác khảo sát, đào thăm dò và tìm kiếm',
     category: 'thuc-dia',
     categoryLabel: 'Triển khai thực địa',
     summary: 'Các lực lượng chuyên trách chính thức bắt đầu triển khai các mũi tìm kiếm trên thực địa tại Công viên Lê Thị Riêng.',
     details: 'Ngày 23-6-2026, các lực lượng bắt đầu triển khai trên thực địa tại Công viên Lê Thị Riêng. Từng mét đất, từng tầng địa chất được đào bới, sàng lọc cẩn trọng theo đúng quy trình nghiệp vụ và phương châm trang nghiêm, chu đáo, tuyệt đối không bỏ sót.',
-    imageUrl: '/sggp/m-2026-06-23.webp',
-    imageCaption: 'Các lực lượng tìm kiếm, quy tập hài cốt liệt sĩ tại Công viên Lê Thị Riêng.',
-    imageSource: 'Ảnh: MẠNH THẮNG / Báo Sài Gòn Giải Phóng',
+    imageUrl: imgMilestone0623,
+    imageCaption: 'Các đơn vị phối hợp khảo sát thực địa tại 3 khu vực trong Công viên Lê Thị Riêng.',
+    imageSource: 'Ảnh: MẠNH THẮNG',
     metrics: [
       { label: 'Địa điểm', value: 'Công viên Lê Thị Riêng' },
       { label: 'Phương thức', value: 'Khảo sát thực địa đồng bộ' },
@@ -98,35 +104,17 @@ export const TIMELINE_MILESTONES: TimelineMilestone[] = [
     accentColor: '#B45309',
   },
   {
-    id: 'm-2026-07-04',
-    year: '04-07-2026',
-    title: 'Thành lập Ban Chỉ huy điều hành và 5 tổ chuyên môn',
-    subtitle: 'Ban Chỉ đạo 515 TPHCM kiện toàn bộ máy thực hiện nhiệm vụ',
-    category: 'chi-dao',
-    categoryLabel: 'Ban Chỉ đạo 515',
-    summary: 'Ban Chỉ đạo 515 TPHCM thành lập Ban Chỉ huy điều hành và 5 tổ chuyên môn phục vụ nhiệm vụ tìm kiếm, quy tập.',
-    details: 'Ngày 4-7-2026, Ban Chỉ đạo 515 TPHCM thành lập Ban Chỉ huy điều hành và các tổ chuyên môn phục vụ nhiệm vụ, gồm: Tổ lấy mẫu, số hóa; Tổ thông tin, tuyên truyền; Tổ bảo đảm an ninh, an toàn; Tổ thống kê di vật; Tổ bảo đảm hậu cần - kỹ thuật. Sự phối hợp đồng bộ giữa các tổ chuyên môn bảo đảm tiến độ và chất lượng nhiệm vụ thiêng liêng.',
-    imageUrl: '/sggp/m-2026-07-04.webp',
-    imageCaption: 'Công tác hậu cần, kỹ thuật và các tổ chuyên môn phối hợp chặt chẽ trên hiện trường.',
-    imageSource: 'Ảnh: MẠNH THẮNG / Báo Sài Gòn Giải Phóng',
-    metrics: [
-      { label: 'Cơ quan thành lập', value: 'Ban Chỉ đạo 515 TPHCM' },
-      { label: 'Các tổ chuyên môn', value: '5 tổ chuyên trách' },
-    ],
-    accentColor: '#C2410C',
-  },
-  {
     id: 'm-2026-07-06',
-    year: '06-07-2026',
+    year: '6-7-2026',
     title: 'Lễ triển khai tìm kiếm, quy tập hài cốt liệt sĩ',
     subtitle: 'Nghi thức trang nghiêm tại Công viên Lê Thị Riêng',
     category: 'nghi-le',
     categoryLabel: 'Lễ triển khai',
     summary: 'Ban Chỉ đạo quốc gia, UBND TPHCM, Bộ Tư lệnh Quân khu 7 tổ chức Lễ triển khai tìm kiếm, quy tập hài cốt liệt sĩ.',
     details: 'Ngày 6-7-2026, Ban Chỉ đạo quốc gia tìm kiếm, quy tập và xác định danh tính hài cốt liệt sĩ, UBND TPHCM, Bộ Tư lệnh Quân khu 7 long trọng tổ chức Lễ triển khai tìm kiếm, quy tập hài cốt liệt sĩ tại Công viên Lê Thị Riêng, khẳng định quyết tâm chính trị và nghĩa tình sâu nặng đối với các anh hùng liệt sĩ.',
-    imageUrl: '/sggp/m-2026-07-06.webp',
-    imageCaption: 'Lực lượng vũ trang và các ban ngành trang nghiêm làm lễ dâng hoa, dâng hương xuất quân thực hiện nhiệm vụ.',
-    imageSource: 'Ảnh: Báo Sài Gòn Giải Phóng',
+    imageUrl: imgMilestone0706,
+    imageCaption: 'Lễ triển khai tìm kiếm, quy tập hài cốt liệt sĩ tại Công viên Lê Thị Riêng.',
+    imageSource: 'Ảnh: MẠNH THẮNG',
     quote: {
       text: 'Tìm kiếm, quy tập, xác định danh tính các liệt sĩ là trách nhiệm thiêng liêng trước Tổ quốc, trước Nhân dân; là lương tri, nguyện vọng của mỗi người Việt Nam.',
       author: 'Thông điệp chỉ đạo tại buổi lễ',
@@ -138,40 +126,40 @@ export const TIMELINE_MILESTONES: TimelineMilestone[] = [
     accentColor: '#15803D',
   },
   {
-    id: 'm-2026-06-23-to-10-05',
-    year: '23/6 - 05/10/2026',
-    title: 'Phát hiện, quy tập 731 hài cốt liệt sĩ',
-    subtitle: 'Kết quả hơn 3 tháng nỗ lực liên tục trên hiện trường',
-    category: 'ket-qua',
-    categoryLabel: 'Kết quả quy tập',
-    summary: 'Từ ngày 23-6 đến hết ngày 5-10-2026: các lực lượng đã phát hiện, quy tập được 731 hài cốt liệt sĩ.',
-    details: 'Từ ngày 23-6 đến hết ngày 5-10-2026: phát hiện, quy tập 731 hài cốt liệt sĩ. Đây là thành quả to lớn thể hiện tinh thần trách nhiệm, sự tận tụy không quản ngại gian khổ của cán bộ, chiến sĩ và các lực lượng tham gia tìm kiếm trên từng mét đất tại Công viên Lê Thị Riêng.',
-    imageUrl: '/sggp/m-2026-06-23-to-10-05.webp',
-    imageCaption: '731 hài cốt liệt sĩ được quy tập và phủ cờ Tổ quốc trang nghiêm trước khi an táng.',
-    imageSource: 'Ảnh: Báo Sài Gòn Giải Phóng',
-    metrics: [
-      { label: 'Hài cốt đã quy tập', value: '731 hài cốt liệt sĩ' },
-      { label: 'Thời gian thực hiện', value: '23-6 đến 5-10-2026' },
-    ],
-    accentColor: '#047857',
-  },
-  {
     id: 'm-2026-08-21',
-    year: '21-08-2026',
+    year: '21-8-2026',
     title: 'Chuyển 7.104 mẫu sinh phẩm ra Hà Nội giám định ADN',
     subtitle: 'Bàn giao Viện Hàn lâm Khoa học và Công nghệ Việt Nam',
     category: 'giam-dinh',
     categoryLabel: 'Giám định ADN',
     summary: 'Chuyển 7.104 mẫu sinh phẩm hài cốt liệt sĩ ra Hà Nội để Viện Hàn lâm Khoa học và Công nghệ Việt Nam thực hiện giám định ADN.',
     details: 'Ngày 21-8-2026, 7.104 mẫu sinh phẩm hài cốt liệt sĩ đã được chuyển ra Hà Nội để Viện Hàn lâm Khoa học và Công nghệ Việt Nam thực hiện giám định ADN. Ứng dụng tiến bộ khoa học công nghệ hiện đại nhất để xác định danh tính, trả lại tên tuổi cho từng anh hùng liệt sĩ đã hy sinh vì đất nước.',
-    imageUrl: '/sggp/m-2026-08-21.webp',
-    imageCaption: 'Các lực lượng chuẩn bị và tập luyện nghi thức di chuyển quách hài cốt liệt sĩ trang nghiêm.',
-    imageSource: 'Ảnh: Báo Sài Gòn Giải Phóng',
+    imageUrl: imgMilestone0821,
+    imageCaption: 'Cán bộ, chiến sĩ Lữ đoàn 918, Quân chủng Phòng không - Không quân đưa mẫu sinh phẩm hài cốt liệt sĩ từ máy bay tới lễ bàn giao, chiều 21-8.',
+    imageSource: 'Ảnh: QUANG PHÚC',
     metrics: [
       { label: 'Mẫu sinh phẩm', value: '7.104 mẫu' },
       { label: 'Đơn vị thực hiện', value: 'Viện Hàn lâm KH&CN Việt Nam' },
     ],
     accentColor: '#0284C7',
+  },
+  {
+    id: 'm-2026-06-23-to-10-05',
+    year: '23-6-2026 đến 5-10-2026',
+    title: 'Phát hiện, quy tập 731 hài cốt liệt sĩ',
+    subtitle: 'Kết quả hơn 3 tháng nỗ lực liên tục trên hiện trường',
+    category: 'ket-qua',
+    categoryLabel: 'Kết quả quy tập',
+    summary: 'Từ ngày 23-6 đến hết ngày 5-10-2026: các lực lượng đã phát hiện, quy tập được 731 hài cốt liệt sĩ.',
+    details: 'Từ ngày 23-6 đến hết ngày 5-10-2026: phát hiện, quy tập 731 hài cốt liệt sĩ. Đây là thành quả to lớn thể hiện tinh thần trách nhiệm, sự tận tụy không quản ngại gian khổ của cán bộ, chiến sĩ và các lực lượng tham gia tìm kiếm trên từng mét đất tại Công viên Lê Thị Riêng.',
+    imageUrl: imgMilestonePeriod,
+    imageCaption: 'Từ ngày 23-6 đến hết ngày 5-10-2026: các lực lượng đã phát hiện, quy tập được 731 hài cốt liệt sĩ.',
+    imageSource: 'Ảnh: MẠNH THẮNG',
+    metrics: [
+      { label: 'Hài cốt đã quy tập', value: '731 hài cốt liệt sĩ' },
+      { label: 'Thời gian thực hiện', value: '23-6 đến 5-10-2026' },
+    ],
+    accentColor: '#047857',
   },
   {
     id: 'm-2026-10-14',
@@ -182,9 +170,9 @@ export const TIMELINE_MILESTONES: TimelineMilestone[] = [
     categoryLabel: 'Truy điệu & An táng',
     summary: 'Tổ chức trọng thể lễ truy điệu, an táng hài cốt liệt sĩ quy tập tại Công viên Lê Thị Riêng.',
     details: 'Ngày 14-10-2026, tổ chức truy điệu, an táng hài cốt liệt sĩ quy tập tại Công viên Lê Thị Riêng. Lễ truy điệu và an táng diễn ra trong không khí trang nghiêm, xúc động, thể hiện sự tri ân sâu sắc của Đảng, Nhà nước và Nhân dân đối với các anh hùng liệt sĩ đã cống hiến trọn đời mình cho độc lập, tự do của Tổ quốc.',
-    imageUrl: '/sggp/m-2026-10-14.webp',
-    imageCaption: 'Cán bộ, chiến sĩ và các lực lượng thực hiện các nghi thức trang trọng tại buổi lễ truy điệu, an táng.',
-    imageSource: 'Ảnh: Báo Sài Gòn Giải Phóng',
+    imageUrl: imgMilestone1014,
+    imageCaption: 'Lễ truy điệu và an táng hài cốt liệt sĩ quy tập tại Công viên Lê Thị Riêng, ngày 14-10-2026.',
+    imageSource: 'Ảnh: MẠNH THẮNG',
     metrics: [
       { label: 'Thời gian', value: 'Ngày 14-10-2026' },
       { label: 'Ý nghĩa thiêng liêng', value: 'Tri ân các anh hùng liệt sĩ' },

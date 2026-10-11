@@ -1,23 +1,39 @@
 import React from 'react';
+import toLamPortrait from '../assets/images/regenerated_image_1791719168794.png';
 
 export const ChapterPhilosophy: React.FC = () => {
   return (
     <section id="triet-ly" className="relative py-12 sm:py-20 bg-[#FBF9F5] border-b border-stone-200">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Big Editorial Quote Banner - Nền vàng nhạt, chữ đỏ */}
-        <div className="my-8 sm:my-12 p-6 sm:p-10 lg:p-12 rounded-2xl bg-amber-50 text-red-900 border border-amber-200/90 relative overflow-hidden shadow-md">
-          <div className="absolute top-0 right-0 -mt-6 -mr-6 w-36 h-36 bg-amber-200/50 rounded-full blur-2xl pointer-events-none" />
+        {/* Trích dẫn phát biểu của Tổng Bí thư, Chủ tịch nước Tô Lâm - Bỏ box nền */}
+        <div className="my-6 sm:my-10 relative">
+          {/* Bố cục: Ảnh TBT Tô Lâm ở trên, chữ canh giữa */}
+          <div className="flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">
+            {/* Hình tròn TBT Tô Lâm, nền đỏ, viền trắng mảnh */}
+            <div className="shrink-0 flex flex-col items-center">
+              <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden bg-red-700 border-2 border-white shadow-md">
+                <img
+                  src={toLamPortrait}
+                  alt="Tổng Bí thư, Chủ tịch nước Tô Lâm"
+                  className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500 bg-red-700"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://image.sggp.org.vn/Uploaded/2026/mzzan/2026_04_06/info-dc-tbt-to-lam-bia-3018-9822.jpg';
+                  }}
+                />
+              </div>
+            </div>
 
-          {/* Khối trích dẫn & Thông tin tác giả */}
-          <div className="flex flex-col justify-between">
-            <blockquote className="font-serif text-base sm:text-lg md:text-xl italic font-semibold leading-relaxed mb-6 text-red-900 text-justify">
-              &ldquo;Đối với Đảng, Nhà nước và Nhân dân Việt Nam, tìm kiếm, quy tập, xác định danh tính các liệt sĩ là trách nhiệm thiêng liêng trước Tổ quốc, trước Nhân dân; là lương tri, nguyện vọng của mỗi người Việt Nam. Nhân dân ta, Đảng ta không bao giờ quên những người đã hy sinh vì đất nước, vì dân tộc, đó là đạo lý và truyền thống văn hóa Việt Nam.
-              <br className="my-2 block" />
-              Trước anh linh các anh hùng liệt sĩ, chúng tôi nguyện làm hết sức mình để hoàn thành sứ mệnh cao cả này bằng tất cả trách nhiệm, trí tuệ và tình cảm sâu nặng nhất&rdquo;.
-            </blockquote>
+            {/* Khối trích dẫn & Thông tin tác giả: Canh giữa */}
+            <div className="w-full flex flex-col items-center text-center">
+              <blockquote className="font-serif text-base sm:text-lg md:text-xl italic font-normal sm:font-medium leading-relaxed mb-6 text-red-950/90 text-center max-w-2xl mx-auto animate-fade-in transition-opacity duration-1000 ease-out">
+                &ldquo;Đối với Đảng, Nhà nước và Nhân dân Việt Nam, tìm kiếm, quy tập, xác định danh tính các liệt sĩ là trách nhiệm thiêng liêng trước Tổ quốc, trước Nhân dân; là lương tri, nguyện vọng của mỗi người Việt Nam. Nhân dân ta, Đảng ta không bao giờ quên những người đã hy sinh vì đất nước, vì dân tộc, đó là đạo lý và truyền thống văn hóa Việt Nam.
+                <br className="my-2.5 block" />
+                Trước anh linh các anh hùng liệt sĩ, chúng tôi nguyện làm hết sức mình để hoàn thành sứ mệnh cao cả này bằng tất cả trách nhiệm, trí tuệ và tình cảm sâu nặng nhất&rdquo;.
+              </blockquote>
 
-            <div className="border-t border-amber-200 pt-4 text-xs sm:text-sm text-red-800 font-bold uppercase tracking-wider text-right">
-              — Tổng Bí thư, Chủ tịch nước Tô Lâm —
+              <div className="text-xs sm:text-sm text-red-900 font-bold uppercase tracking-wider text-center">
+                Tổng Bí thư, Chủ tịch nước Tô Lâm
+              </div>
             </div>
           </div>
         </div>

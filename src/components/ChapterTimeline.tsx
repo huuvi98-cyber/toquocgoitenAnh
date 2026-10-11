@@ -4,6 +4,12 @@ import { TimelineMilestone } from '../types/diplomacy';
 import { ChevronRight, Quote, Camera } from 'lucide-react';
 import { CyberGlobeBackground } from './CyberGlobeBackground';
 
+// Helper để bảo đảm các con số không có số 0 ở trước (ví dụ 08 -> 8, 06 -> 6)
+const cleanLeadingZeros = (val: string): string => {
+  if (!val) return '';
+  return val.replace(/\b0+(\d+)/g, '$1');
+};
+
 export const ChapterTimeline: React.FC = () => {
   const [selectedMilestone, setSelectedMilestone] = useState<TimelineMilestone>(TIMELINE_MILESTONES[0]);
 
@@ -14,8 +20,9 @@ export const ChapterTimeline: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-stone-900 tracking-tight">
-            Hoạt động tìm kiếm tại CV Lê Thị Riêng
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-stone-900 tracking-tight leading-tight">
+            Hoạt động tìm kiếm
+            <span className="block mt-1 sm:mt-2">tại Công viên Lê Thị Riêng</span>
           </h2>
         </div>
 
@@ -32,33 +39,28 @@ export const ChapterTimeline: React.FC = () => {
                     onClick={() => setSelectedMilestone(milestone)}
                     className={`w-full text-left p-3.5 sm:p-4 rounded-xl transition-all cursor-pointer border ${
                       isSelected
-                        ? 'bg-white border-amber-800 shadow-md ring-1 ring-amber-800/20 translate-x-1'
-                        : 'bg-white/75 hover:bg-white border-stone-200/80 hover:border-stone-300 hover:shadow-xs'
+                        ? 'bg-white border-red-700 shadow-md ring-1 ring-red-700/20 translate-x-1'
+                        : 'bg-white/80 hover:bg-white border-stone-200/80 hover:border-red-200 hover:shadow-xs'
                     }`}
                   >
                     <div className="flex gap-3 items-start">
                       {/* Thumbnail hình ảnh từ Báo Sài Gòn Giải Phóng */}
                       {milestone.imageUrl && (
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden shrink-0 border border-stone-200 bg-stone-100 relative group">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden shrink-0 border border-stone-200 bg-white relative group">
                           <img
                             src={milestone.imageUrl}
                             alt={milestone.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                             loading="lazy"
                           />
-                          <div className="absolute bottom-0 inset-x-0 bg-black/60 text-[9px] text-white text-center py-0.5 font-sans">
-                            SGGP
-                          </div>
                         </div>
                       )}
 
                       <div className="flex-1 min-w-0">
-                        <div className="flex items-center justify-between gap-1 mb-1">
-                          <span className="font-serif text-sm sm:text-base font-bold text-amber-900 tabular-nums">
-                            {milestone.year}
-                          </span>
-                          <span className="text-[10px] font-sans font-medium px-2 py-0.5 rounded-full bg-stone-100 text-stone-600 uppercase tracking-wider shrink-0">
-                            {milestone.categoryLabel}
+                        {/* Số mốc thời gian to hơn, màu đỏ, font chữ chân phương (font-sans) không số 0 ở trước */}
+                        <div className="mb-1">
+                          <span className="font-sans text-base sm:text-lg font-bold text-red-700 tabular-nums tracking-tight">
+                            {cleanLeadingZeros(milestone.year)}
                           </span>
                         </div>
 
@@ -72,7 +74,7 @@ export const ChapterTimeline: React.FC = () => {
 
                       <ChevronRight
                         className={`w-4 h-4 mt-2 shrink-0 transition-transform ${
-                          isSelected ? 'text-amber-800 translate-x-0.5' : 'text-stone-300'
+                          isSelected ? 'text-red-700 translate-x-0.5' : 'text-stone-300'
                         }`}
                       />
                     </div>
@@ -84,50 +86,49 @@ export const ChapterTimeline: React.FC = () => {
 
           {/* Detailed Milestone Dossier (7 cols) */}
           <div className="lg:col-span-7 bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
-            {/* Visual Photo Header: Ảnh từ Báo Sài Gòn Giải Phóng */}
-            <div className="relative h-60 sm:h-72 w-full overflow-hidden bg-stone-900 group">
+            {/* Visual Photo Header: Nền hiển thị bên phải màu trắng theo yêu cầu */}
+            <div className="relative w-full bg-white overflow-hidden flex items-center justify-center min-h-[280px] sm:min-h-[360px] md:min-h-[420px] p-4 sm:p-6 border-b border-stone-200/80">
               {selectedMilestone.imageUrl ? (
-                <>
+                <div className="relative w-full h-full flex items-center justify-center">
+                  {/* Giữ nguyên toàn bộ khung hình ảnh tư liệu trên nền trắng */}
                   <img
                     src={selectedMilestone.imageUrl}
                     alt={selectedMilestone.title}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    className="relative z-10 max-h-[460px] w-auto max-w-full object-contain mx-auto rounded-lg shadow-sm border border-stone-200/80 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/20 pointer-events-none" />
-                </>
+                </div>
               ) : (
                 <>
                   <CyberGlobeBackground className="w-full h-full" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#020826]/85 via-[#021452]/20 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent pointer-events-none" />
                 </>
               )}
 
-              {/* Overlay Date & Category Badge */}
-              <div className="absolute bottom-4 left-6 right-6 flex items-end justify-between gap-4">
-                <div>
-                  <span className="text-xs uppercase tracking-widest text-amber-300 font-mono font-medium block drop-shadow-sm">
-                    Mốc Thời Gian Sự Kiện
+              {/* Dignified Date Badge: Nền trắng viền đỏ, số mốc thời gian màu đỏ to hơn, font chân phương */}
+              <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-20">
+                <div className="bg-white/95 backdrop-blur-md border border-red-200 text-red-700 px-3.5 py-1.5 rounded-lg shadow-sm flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse shrink-0" />
+                  <span className="font-sans text-base sm:text-lg font-bold text-red-700 tabular-nums tracking-tight">
+                    {cleanLeadingZeros(selectedMilestone.year)}
                   </span>
-                  <div className="font-serif text-2xl sm:text-3xl font-bold text-white tabular-nums drop-shadow-md">
-                    {selectedMilestone.year}
-                  </div>
-                </div>
-                <div className="px-3 py-1 rounded-md bg-black/50 backdrop-blur-md border border-white/20 text-xs font-medium text-amber-200 shrink-0">
-                  {selectedMilestone.categoryLabel}
                 </div>
               </div>
             </div>
 
-            {/* Photo Caption & Source Attribution Bar */}
-            {selectedMilestone.imageCaption && (
-              <div className="bg-amber-50/60 px-6 py-2.5 border-b border-stone-200 text-xs text-stone-700 flex flex-wrap items-center justify-between gap-2">
-                <span className="flex items-center gap-1.5 font-medium italic">
-                  <Camera className="w-3.5 h-3.5 text-amber-800 shrink-0" />
-                  {selectedMilestone.imageCaption}
-                </span>
-                <span className="font-semibold text-amber-900 bg-amber-100/80 px-2 py-0.5 rounded text-[11px] shrink-0">
-                  Nguồn: {selectedMilestone.imageSource || 'Báo Sài Gòn Giải Phóng'}
-                </span>
+            {/* Photo Caption & Source Attribution Bar: Chuẩn báo chí (font mảnh, không bo nền) */}
+            {(selectedMilestone.imageCaption || selectedMilestone.imageSource) && (
+              <div className="px-5 sm:px-6 py-2.5 border-b border-stone-100 bg-white text-xs sm:text-sm text-stone-700 flex flex-col sm:flex-row sm:items-baseline justify-between gap-3">
+                {selectedMilestone.imageCaption && (
+                  <div className="flex items-start gap-2 italic leading-relaxed text-stone-700">
+                    <Camera className="w-3.5 h-3.5 text-stone-400 shrink-0 mt-0.5" />
+                    <span>{selectedMilestone.imageCaption}</span>
+                  </div>
+                )}
+                {selectedMilestone.imageSource && (
+                  <span className="font-light text-stone-500 text-xs shrink-0 self-start sm:self-auto not-italic">
+                    {selectedMilestone.imageSource}
+                  </span>
+                )}
               </div>
             )}
 
@@ -158,20 +159,6 @@ export const ChapterTimeline: React.FC = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-              )}
-
-              {/* Metrics if available */}
-              {selectedMilestone.metrics && selectedMilestone.metrics.length > 0 && (
-                <div className="mt-6 pt-6 border-t border-stone-100 grid grid-cols-2 gap-4">
-                  {selectedMilestone.metrics.map((metric, idx) => (
-                    <div key={idx} className="bg-stone-50 p-3 rounded-lg border border-stone-100">
-                      <span className="text-xs text-stone-500 block">{metric.label}</span>
-                      <span className="font-semibold text-stone-900 text-sm mt-0.5 block">
-                        {metric.value}
-                      </span>
-                    </div>
-                  ))}
                 </div>
               )}
             </div>

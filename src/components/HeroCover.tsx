@@ -54,20 +54,17 @@ export const HeroCover: React.FC<HeroCoverProps> = () => {
 
       {/* 3. POEM BLOCK: Bài thơ chữ nhỏ hơn 1 size */}
       <div className="relative z-10 max-w-xl mx-auto px-4 sm:px-6 text-center pointer-events-none pt-6 sm:pt-8 pb-6 sm:pb-10">
-        {/* Poetic Verse Stanza: Màu trắng, nhỏ hơn 1 size (text-sm sm:text-base), Tổ quốc không Cap, không bóng đổ */}
-        <div className="text-white font-serif italic text-sm sm:text-base leading-relaxed space-y-1.5">
+        {/* Poetic Verse Stanza: Màu trắng, 1 co chữ, Tổ quốc không Cap, không bóng đổ */}
+        <div className="text-white font-serif italic text-sm sm:text-base leading-relaxed space-y-1">
           <p className="tracking-wide">
             Thắp lên ngọn đuốc Hòa bình, bao người đã ngã
           </p>
-          <p className="text-white/70 tracking-widest text-xs font-sans not-italic py-0.5">
-            ······
+          <p className="text-white/80 tracking-widest text-sm font-sans not-italic py-0.5">
+            ...
           </p>
-          <p className="tracking-wide">
-            Ngọn đuốc Hòa bình trên tay rực lửa
-          </p>
-          <div className="pt-1 space-y-0.5 text-white">
+          <div className="space-y-0.5 text-white">
             <p>Tôi lắng nghe</p>
-            <p className="font-medium">Tổ quốc</p>
+            <p>Tổ quốc</p>
             <p>gọi tên mình</p>
           </div>
           <div className="pt-3">
