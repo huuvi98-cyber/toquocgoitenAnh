@@ -44,8 +44,8 @@ export const HeroCover: React.FC<HeroCoverProps> = () => {
             <span className="block text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white not-italic sm:italic leading-[0.88]">
               Anh
             </span>
-            {/* Nhành hoa cúc trắng tri ân nhỏ lại, vắt qua chữ Anh */}
-            <div className="absolute -left-3 sm:-left-5 md:-left-8 -right-6 sm:-right-10 md:-right-14 -bottom-1 sm:-bottom-2 md:-bottom-3 pointer-events-none">
+            {/* Nhành hoa cúc trắng hơi cong, nằm phía chân chữ Anh */}
+            <div className="absolute -left-2 sm:-left-4 md:-left-6 -right-4 sm:-right-8 md:-right-10 -bottom-2 sm:-bottom-3.5 md:-bottom-5 pointer-events-none">
               <WhiteChrysanthemumSprig className="w-full h-auto" />
             </div>
           </div>
