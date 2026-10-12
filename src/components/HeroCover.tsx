@@ -45,7 +45,7 @@ export const HeroCover: React.FC<HeroCoverProps> = () => {
           <span className="block text-3xl md:text-4xl lg:text-[2.6rem] font-medium text-white/95 leading-[0.9] mt-2.5 sm:mt-3 md:mt-3.5 -translate-x-10 sm:-translate-x-16 md:-translate-x-20">
             gọi tên
           </span>
-          <div className="relative inline-flex items-center -mt-5 sm:-mt-6 md:-mt-7 translate-x-6 sm:translate-x-8 md:translate-x-10">
+          <div className="relative inline-flex items-center -mt-4 sm:-mt-6 md:-mt-7 translate-x-10 sm:translate-x-11 md:translate-x-12">
             <span className="block text-7xl md:text-8xl lg:text-[7.25rem] font-black text-white italic leading-[0.82] tracking-tighter drop-shadow-lg">
               Anh
             </span>
