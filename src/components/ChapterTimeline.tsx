@@ -18,11 +18,15 @@ export const ChapterTimeline: React.FC = () => {
   return (
     <section id="moc-son" className="relative py-24 sm:py-32 bg-[#F7F4EE] border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10">
+        {/* Section Header with refined typography and accent tag */}
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-100/90 border border-red-200/80 text-red-800 text-xs font-bold tracking-widest uppercase mb-3 shadow-xs">
+            <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse" />
+            Dòng sự kiện lịch sử
+          </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-stone-900 tracking-tight leading-tight">
             Hoạt động tìm kiếm
-            <span className="block mt-1 sm:mt-2">tại Công viên Lê Thị Riêng</span>
+            <span className="block mt-1 sm:mt-2 text-red-900">tại Công viên Lê Thị Riêng</span>
           </h2>
         </div>
 
@@ -37,16 +41,16 @@ export const ChapterTimeline: React.FC = () => {
                   <button
                     key={milestone.id}
                     onClick={() => setSelectedMilestone(milestone)}
-                    className={`w-full text-left p-3.5 sm:p-4 rounded-xl transition-all cursor-pointer border ${
+                    className={`w-full text-left p-3.5 sm:p-4 rounded-xl transition-all cursor-pointer border group ${
                       isSelected
-                        ? 'bg-white border-red-700 shadow-md ring-1 ring-red-700/20 translate-x-1'
-                        : 'bg-white/80 hover:bg-white border-stone-200/80 hover:border-red-200 hover:shadow-xs'
+                        ? 'bg-white border-l-4 border-l-red-700 border-stone-200 shadow-md ring-1 ring-red-700/20 translate-x-1'
+                        : 'bg-white/85 hover:bg-white border-stone-200/90 hover:border-red-200 hover:shadow-xs'
                     }`}
                   >
                     <div className="flex gap-3 items-start">
                       {/* Thumbnail hình ảnh từ Báo Sài Gòn Giải Phóng */}
                       {milestone.imageUrl && (
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden shrink-0 border border-stone-200 bg-white relative group">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden shrink-0 border border-stone-200 bg-white relative">
                           <img
                             src={milestone.imageUrl}
                             alt={milestone.title}
@@ -57,24 +61,36 @@ export const ChapterTimeline: React.FC = () => {
                       )}
 
                       <div className="flex-1 min-w-0">
-                        {/* Số mốc thời gian to hơn, màu đỏ, font chữ chân phương (font-sans) không số 0 ở trước */}
-                        <div className="mb-1">
-                          <span className="font-sans text-base sm:text-lg font-bold text-red-700 tabular-nums tracking-tight">
+                        {/* Số mốc thời gian nổi bật: huy hiệu sắc nét, font chữ chân phương không số 0 ở trước */}
+                        <div className="mb-1.5 flex items-center">
+                          <span
+                            className={`inline-flex items-center font-sans text-xs sm:text-sm font-extrabold tabular-nums tracking-tight px-2.5 py-0.5 rounded-md transition-colors ${
+                              isSelected
+                                ? 'bg-red-700 text-white shadow-xs'
+                                : 'bg-red-50 text-red-700 border border-red-100 group-hover:bg-red-100/80'
+                            }`}
+                          >
                             {cleanLeadingZeros(milestone.year)}
                           </span>
                         </div>
 
-                        <h4 className="font-serif text-sm font-semibold text-stone-900 line-clamp-1 leading-snug">
+                        <h4
+                          className={`font-serif text-sm sm:text-[15px] leading-snug line-clamp-1 transition-colors ${
+                            isSelected
+                              ? 'font-bold text-red-950'
+                              : 'font-semibold text-stone-900 group-hover:text-red-800'
+                          }`}
+                        >
                           {milestone.title}
                         </h4>
-                        <p className="text-xs text-stone-600 mt-1 line-clamp-2">
+                        <p className="text-xs text-stone-600 mt-1 line-clamp-2 leading-relaxed font-sans">
                           {milestone.summary}
                         </p>
                       </div>
 
                       <ChevronRight
                         className={`w-4 h-4 mt-2 shrink-0 transition-transform ${
-                          isSelected ? 'text-red-700 translate-x-0.5' : 'text-stone-300'
+                          isSelected ? 'text-red-700 translate-x-0.5' : 'text-stone-300 group-hover:text-stone-400'
                         }`}
                       />
                     </div>
@@ -86,11 +102,10 @@ export const ChapterTimeline: React.FC = () => {
 
           {/* Detailed Milestone Dossier (7 cols) */}
           <div className="lg:col-span-7 bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
-            {/* Visual Photo Header: Nền hiển thị bên phải màu trắng theo yêu cầu */}
+            {/* Visual Photo Header: Nền hiển thị bên phải màu trắng */}
             <div className="relative w-full bg-white overflow-hidden flex items-center justify-center min-h-[280px] sm:min-h-[360px] md:min-h-[420px] p-4 sm:p-6 border-b border-stone-200/80">
               {selectedMilestone.imageUrl ? (
                 <div className="relative w-full h-full flex items-center justify-center">
-                  {/* Giữ nguyên toàn bộ khung hình ảnh tư liệu trên nền trắng */}
                   <img
                     src={selectedMilestone.imageUrl}
                     alt={selectedMilestone.title}
@@ -104,28 +119,28 @@ export const ChapterTimeline: React.FC = () => {
                 </>
               )}
 
-              {/* Dignified Date Badge: Nền trắng viền đỏ, số mốc thời gian màu đỏ to hơn, font chân phương */}
+              {/* Dignified Date Badge: Nổi bật điểm nhấn mốc thời gian */}
               <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-20">
-                <div className="bg-white/95 backdrop-blur-md border border-red-200 text-red-700 px-3.5 py-1.5 rounded-lg shadow-sm flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse shrink-0" />
-                  <span className="font-sans text-base sm:text-lg font-bold text-red-700 tabular-nums tracking-tight">
+                <div className="bg-white/95 backdrop-blur-md border border-red-200/90 text-red-700 px-3.5 py-1.5 rounded-lg shadow-md flex items-center gap-2.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse shrink-0 ring-4 ring-red-100" />
+                  <span className="font-sans text-base sm:text-lg font-black text-red-700 tabular-nums tracking-tight">
                     {cleanLeadingZeros(selectedMilestone.year)}
                   </span>
                 </div>
               </div>
             </div>
 
-            {/* Photo Caption & Source Attribution Bar: Chuẩn báo chí (font mảnh, không bo nền) */}
+            {/* Photo Caption & Source Attribution Bar */}
             {(selectedMilestone.imageCaption || selectedMilestone.imageSource) && (
-              <div className="px-5 sm:px-6 py-2.5 border-b border-stone-100 bg-white text-xs sm:text-sm text-stone-700 flex flex-col sm:flex-row sm:items-baseline justify-between gap-3">
+              <div className="px-5 sm:px-6 py-2.5 border-b border-stone-100 bg-stone-50/50 text-xs sm:text-sm text-stone-700 flex flex-col sm:flex-row sm:items-baseline justify-between gap-3">
                 {selectedMilestone.imageCaption && (
-                  <div className="flex items-start gap-2 italic leading-relaxed text-stone-700">
-                    <Camera className="w-3.5 h-3.5 text-stone-400 shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-2 italic leading-relaxed text-stone-700 font-serif">
+                    <Camera className="w-3.5 h-3.5 text-stone-400 shrink-0 mt-0.5 not-italic" />
                     <span>{selectedMilestone.imageCaption}</span>
                   </div>
                 )}
                 {selectedMilestone.imageSource && (
-                  <span className="font-light text-stone-500 text-xs shrink-0 self-start sm:self-auto not-italic">
+                  <span className="font-sans font-medium text-stone-500 text-xs shrink-0 self-start sm:self-auto not-italic tracking-wide">
                     {selectedMilestone.imageSource}
                   </span>
                 )}
@@ -134,27 +149,38 @@ export const ChapterTimeline: React.FC = () => {
 
             {/* Dossier Content Body */}
             <div className="p-6 sm:p-8">
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900 mb-1 leading-snug">
+              <div className="flex items-center gap-2 mb-2 text-xs sm:text-sm font-bold uppercase tracking-wider text-red-700 font-sans">
+                <span>Mốc thời gian trọng điểm</span>
+                <span className="text-stone-300">•</span>
+                <span className="text-stone-500 font-medium normal-case">Tư liệu lịch sử</span>
+              </div>
+
+              <h3 className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-stone-950 mb-2 leading-snug tracking-tight">
                 {selectedMilestone.title}
               </h3>
-              <p className="text-sm font-medium text-amber-800 mb-6">
-                {selectedMilestone.subtitle}
-              </p>
 
-              <div className="text-sm sm:text-base leading-relaxed text-stone-700 space-y-4 text-justify">
-                <p>{selectedMilestone.details}</p>
+              {selectedMilestone.subtitle && (
+                <p className="text-sm sm:text-base font-serif italic text-red-900/90 mb-5 pb-4 border-b border-stone-200/80 leading-relaxed">
+                  {selectedMilestone.subtitle}
+                </p>
+              )}
+
+              <div className="text-sm sm:text-base leading-relaxed sm:leading-loose text-stone-800 space-y-4 text-justify font-sans">
+                <p className="first-letter:text-3xl first-letter:font-serif first-letter:font-bold first-letter:text-red-800 first-letter:mr-1.5 first-letter:float-left">
+                  {selectedMilestone.details}
+                </p>
               </div>
 
               {/* Quote if available */}
               {selectedMilestone.quote && (
-                <div className="my-6 p-4 rounded-xl bg-amber-50/70 border-l-4 border-amber-800 text-stone-800">
-                  <div className="flex gap-2">
-                    <Quote className="w-4 h-4 text-amber-800 shrink-0 mt-0.5" />
+                <div className="my-6 p-5 rounded-xl bg-amber-50/80 border-l-4 border-red-700 text-stone-800 shadow-xs">
+                  <div className="flex gap-3">
+                    <Quote className="w-5 h-5 text-red-700 shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-serif italic text-sm text-stone-800 leading-snug">
+                      <p className="font-serif italic text-sm sm:text-base text-stone-900 leading-relaxed">
                         &ldquo;{selectedMilestone.quote.text}&rdquo;
                       </p>
-                      <p className="text-xs font-semibold text-amber-900 mt-2">
+                      <p className="text-xs sm:text-sm font-bold text-red-900 mt-2.5 uppercase tracking-wide font-sans">
                         — {selectedMilestone.quote.author}
                       </p>
                     </div>
