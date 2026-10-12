@@ -313,51 +313,13 @@ export const ReportInfographicArticle: React.FC = () => {
               <div className="mb-4 flex items-center justify-center">
                 <svg
                   viewBox="0 0 100 100"
-                  width="84"
-                  height="84"
+                  width="56"
+                  height="56"
                   className="source-icon-svg drop-shadow-md"
                 >
-                  <defs>
-                    <linearGradient id="tile-bg-1" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#FCFAF6" />
-                      <stop offset="100%" stopColor="#EBE3D5" />
-                    </linearGradient>
-                    <linearGradient id="book-cover-1" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#883324" />
-                      <stop offset="100%" stopColor="#551F16" />
-                    </linearGradient>
-                    <linearGradient id="parchment-1" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#FFFDF9" />
-                      <stop offset="100%" stopColor="#EFE6D6" />
-                    </linearGradient>
-                  </defs>
-                  <rect x="3" y="3" width="94" height="94" rx="22" fill="url(#tile-bg-1)" stroke="#E0D6C4" strokeWidth="1.5" />
-                  <rect x="5" y="5" width="90" height="90" rx="20" fill="none" stroke="#FFFFFF" strokeOpacity="0.8" strokeWidth="1" />
-                  {/* Sách đáy */}
-                  <g>
-                    <rect x="18" y="24" width="58" height="56" rx="6" fill="#3E1C15" transform="rotate(-5 47 52)" />
-                    <path d="M20 73 C30 75 62 73 72 68" stroke="#D5C9B7" strokeWidth="3" strokeLinecap="round" fill="none" />
-                    <path d="M23 71 L23 84 L27 81 L31 84 L31 71 Z" fill="#4B6535" />
-                  </g>
-                  {/* Quyển giữa */}
-                  <g>
-                    <rect x="22" y="19" width="56" height="58" rx="6" fill="url(#book-cover-1)" transform="rotate(3 50 48)" />
-                    <path d="M73 37 L83 38 L82 44 L72 43 Z" fill="#4B6535" />
-                  </g>
-                  {/* Tài liệu lưu trữ phía trên */}
-                  <g>
-                    <rect x="24" y="16" width="48" height="54" rx="4" fill="url(#parchment-1)" stroke="#DFD3BE" strokeWidth="1" />
-                    <rect x="27" y="19" width="42" height="48" rx="2" fill="none" stroke="#C5221F" strokeWidth="1.5" />
-                    <rect x="29" y="21" width="38" height="44" rx="1" fill="none" stroke="#C5221F" strokeWidth="0.75" strokeDasharray="3,1" />
-                    <path d="M29 25 L33 25 M29 21 L29 25" stroke="#C5221F" strokeWidth="1.5" fill="none" />
-                    <path d="M67 25 L63 25 M67 21 L67 25" stroke="#C5221F" strokeWidth="1.5" fill="none" />
-                    <path d="M29 61 L33 61 M29 65 L29 61" stroke="#C5221F" strokeWidth="1.5" fill="none" />
-                    <path d="M67 61 L63 61 M67 65 L67 61" stroke="#C5221F" strokeWidth="1.5" fill="none" />
-                    <line x1="36" y1="37" x2="60" y2="37" stroke="#7A221E" strokeWidth="2.2" strokeLinecap="round" />
-                    <line x1="34" y1="43" x2="62" y2="43" stroke="#8C6E53" strokeWidth="1.5" strokeLinecap="round" />
-                    <line x1="38" y1="49" x2="58" y2="49" stroke="#8C6E53" strokeWidth="1.5" strokeLinecap="round" />
-                    <path d="M68 62 Q72 66 73 70 L65 70 Q66 65 68 62 Z" fill="#D3C3AA" stroke="#B8A488" strokeWidth="0.75" />
-                  </g>
+                  <circle cx="50" cy="50" r="42" fill="#DA251D" stroke="#A01B18" strokeWidth="1.5" />
+                  <circle cx="50" cy="50" r="39" fill="none" stroke="#FFD700" strokeOpacity="0.4" strokeWidth="1" />
+                  <polygon points="50.00,28.00 55.00,43.12 70.92,43.20 58.08,52.63 62.93,67.80 50.00,58.50 37.07,67.80 41.92,52.63 29.08,43.20 45.00,43.12" fill="#FFD700" />
                 </svg>
               </div>
               <h3 className="title-serif text-lg font-bold text-[#181513] leading-snug">
@@ -370,44 +332,13 @@ export const ReportInfographicArticle: React.FC = () => {
               <div className="mb-4 flex items-center justify-center">
                 <svg
                   viewBox="0 0 100 100"
-                  width="84"
-                  height="84"
+                  width="56"
+                  height="56"
                   className="source-icon-svg drop-shadow-md"
                 >
-                  <defs>
-                    <linearGradient id="tile-bg-2" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#FCFAF6" />
-                      <stop offset="100%" stopColor="#EBE3D5" />
-                    </linearGradient>
-                    <linearGradient id="folder-kraft" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#D4BA99" />
-                      <stop offset="100%" stopColor="#AC8D65" />
-                    </linearGradient>
-                  </defs>
-                  <rect x="3" y="3" width="94" height="94" rx="22" fill="url(#tile-bg-2)" stroke="#E0D6C4" strokeWidth="1.5" />
-                  <rect x="5" y="5" width="90" height="90" rx="20" fill="none" stroke="#FFFFFF" strokeOpacity="0.8" strokeWidth="1" />
-                  <g>
-                    <rect x="19" y="20" width="58" height="60" rx="6" fill="#6B2820" transform="rotate(-5 48 50)" />
-                  </g>
-                  <g>
-                    <rect x="22" y="17" width="56" height="64" rx="5" fill="url(#folder-kraft)" stroke="#8F724E" strokeWidth="1" />
-                    <path d="M30 14 L30 29 L35 25 L40 29 L40 14 Z" fill="#4B6038" />
-                    <path d="M22 28 C17 32 17 48 22 52" stroke="#485834" strokeWidth="3" strokeLinecap="round" fill="none" />
-                    <circle cx="21" cy="40" r="2.5" fill="#3E4C2C" />
-                    <path d="M20 41 C16 45 15 50 16 54" stroke="#485834" strokeWidth="2" strokeLinecap="round" fill="none" />
-                    <path d="M22 41 C21 47 23 52 25 56" stroke="#485834" strokeWidth="2" strokeLinecap="round" fill="none" />
-                    <circle cx="37" cy="65" r="10" fill="#9F845F" stroke="#485834" strokeWidth="2" />
-                    <circle cx="37" cy="65" r="8.2" fill="none" stroke="#485834" strokeWidth="1" />
-                    <polygon points="37,59 39,63.5 44,63.5 40,66.5 41.5,71 37,68 32.5,71 34,66.5 30,63.5 35,63.5" fill="#485834" />
-                  </g>
-                  <g transform="rotate(7 63 47)">
-                    <rect x="44" y="24" width="34" height="40" rx="2" fill="#FAF6EE" stroke="#D3C9B8" strokeWidth="1" />
-                    <rect x="47" y="27" width="28" height="28" fill="#38322B" />
-                    <path d="M47 48 C52 42 56 46 62 40 C68 44 72 38 75 42 L75 55 L47 55 Z" fill="#696155" />
-                    <path d="M52 43 C56 36 60 41 63 37 C67 40 70 34 75 39 L75 50 L52 50 Z" fill="#887F70" />
-                    <circle cx="65" cy="33" r="3" fill="#D3CBBE" opacity="0.8" />
-                    <line x1="49" y1="59" x2="63" y2="59" stroke="#B8AFA0" strokeWidth="1.5" strokeLinecap="round" />
-                  </g>
+                  <circle cx="50" cy="50" r="42" fill="#DA251D" stroke="#A01B18" strokeWidth="1.5" />
+                  <circle cx="50" cy="50" r="39" fill="none" stroke="#FFD700" strokeOpacity="0.4" strokeWidth="1" />
+                  <polygon points="50.00,28.00 55.00,43.12 70.92,43.20 58.08,52.63 62.93,67.80 50.00,58.50 37.07,67.80 41.92,52.63 29.08,43.20 45.00,43.12" fill="#FFD700" />
                 </svg>
               </div>
               <h3 className="title-serif text-lg font-bold text-[#181513] leading-snug">
@@ -420,53 +351,13 @@ export const ReportInfographicArticle: React.FC = () => {
               <div className="mb-4 flex items-center justify-center">
                 <svg
                   viewBox="0 0 100 100"
-                  width="84"
-                  height="84"
+                  width="56"
+                  height="56"
                   className="source-icon-svg drop-shadow-md"
                 >
-                  <defs>
-                    <linearGradient id="tile-bg-3" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#FCFAF6" />
-                      <stop offset="100%" stopColor="#EBE3D5" />
-                    </linearGradient>
-                    <linearGradient id="terrain-clay" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#DFC4A3" />
-                      <stop offset="100%" stopColor="#BA9E7E" />
-                    </linearGradient>
-                  </defs>
-                  <rect x="3" y="3" width="94" height="94" rx="22" fill="url(#tile-bg-3)" stroke="#E0D6C4" strokeWidth="1.5" />
-                  <rect x="5" y="5" width="90" height="90" rx="20" fill="none" stroke="#FFFFFF" strokeOpacity="0.8" strokeWidth="1" />
-                  <g>
-                    <rect x="18" y="18" width="64" height="64" rx="8" fill="url(#terrain-clay)" stroke="#A48769" strokeWidth="1.2" />
-                    <path d="M22 34 C30 28 42 32 48 38 C54 44 46 56 36 58 C26 60 20 48 22 34 Z" fill="none" stroke="#9E8062" strokeWidth="1.7" />
-                    <path d="M26 38 C32 34 40 36 43 41 C46 46 41 52 35 53 C29 54 25 47 26 38 Z" fill="none" stroke="#8F7154" strokeWidth="1.5" />
-                    <path d="M30 42 C34 39 38 41 39 44 C40 47 37 50 33 50 C30 50 28 46 30 42 Z" fill="#9E8062" opacity="0.3" />
-                    <path d="M38 66 C46 58 56 60 62 68 C68 76 56 82 46 80 C38 78 34 72 38 66 Z" fill="none" stroke="#9E8062" strokeWidth="1.5" />
-                    <path d="M42 69 C48 64 54 65 57 70 C60 75 52 78 46 77 C42 76 39 72 42 69 Z" fill="none" stroke="#8F7154" strokeWidth="1.2" />
-                    <polygon points="26,24 31,22 34,26 29,29" fill="#9B4B38" />
-                    <polygon points="68,58 72,56 74,60 70,62" fill="#9B4B38" />
-                    <polygon points="23,65 27,64 28,68 24,70" fill="#9B4B38" />
-                    <polygon points="62,25 65,23 67,26 63,28" fill="#9B4B38" />
-                    <path d="M38,28 Q40,22 41,20 M40,24 Q43,21 45,21" stroke="#486236" strokeWidth="1.8" strokeLinecap="round" fill="none" />
-                    <path d="M54,48 Q56,43 58,42 M56,46 Q59,44 61,45" stroke="#486236" strokeWidth="1.8" strokeLinecap="round" fill="none" />
-                    <path d="M68,70 Q70,66 72,65 M70,68 Q73,67 75,68" stroke="#486236" strokeWidth="1.8" strokeLinecap="round" fill="none" />
-                  </g>
-                  {/* Kính lúp */}
-                  <g>
-                    <circle cx="68" cy="30" r="12" fill="#E8F4F8" fillOpacity="0.88" stroke="#632E22" strokeWidth="2.5" />
-                    <circle cx="68" cy="30" r="10" fill="none" stroke="#C49B71" strokeWidth="1.5" />
-                    <path d="M62 24 C64 22 68 22 72 24" stroke="#FFFFFF" strokeWidth="1.8" strokeLinecap="round" fill="none" />
-                    <line x1="77" y1="39" x2="88" y2="50" stroke="#7E3122" strokeWidth="4.5" strokeLinecap="round" />
-                    <circle cx="88" cy="50" r="2.5" fill="#582117" />
-                  </g>
-                  {/* Xẻng khai quật */}
-                  <g transform="rotate(-15 65 65)">
-                    <path d="M54 62 L64 62 C64 72 59 78 54 80 C49 78 44 72 44 62 Z" fill="#69737D" stroke="#434B52" strokeWidth="1.5" />
-                    <path d="M49 63 L49 76" stroke="#909CA6" strokeWidth="1.5" />
-                    <line x1="54" y1="62" x2="54" y2="44" stroke="#873526" strokeWidth="3" strokeLinecap="round" />
-                    <path d="M50 44 L58 44 L58 38 L50 38 Z" fill="#5A2319" stroke="#3D1710" strokeWidth="1" />
-                    <rect x="52" y="40" width="4" height="2" fill="#FAF5ED" />
-                  </g>
+                  <circle cx="50" cy="50" r="42" fill="#DA251D" stroke="#A01B18" strokeWidth="1.5" />
+                  <circle cx="50" cy="50" r="39" fill="none" stroke="#FFD700" strokeOpacity="0.4" strokeWidth="1" />
+                  <polygon points="50.00,28.00 55.00,43.12 70.92,43.20 58.08,52.63 62.93,67.80 50.00,58.50 37.07,67.80 41.92,52.63 29.08,43.20 45.00,43.12" fill="#FFD700" />
                 </svg>
               </div>
               <h3 className="title-serif text-lg font-bold text-[#181513] leading-snug">
@@ -479,64 +370,13 @@ export const ReportInfographicArticle: React.FC = () => {
               <div className="mb-4 flex items-center justify-center">
                 <svg
                   viewBox="0 0 100 100"
-                  width="84"
-                  height="84"
+                  width="56"
+                  height="56"
                   className="source-icon-svg drop-shadow-md"
                 >
-                  <defs>
-                    <linearGradient id="tile-bg-4" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#FCFAF6" />
-                      <stop offset="100%" stopColor="#EBE3D5" />
-                    </linearGradient>
-                    <linearGradient id="jacket-green" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#556E42" />
-                      <stop offset="100%" stopColor="#3C4F2E" />
-                    </linearGradient>
-                    <linearGradient id="speech-bubble-red" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#B24733" />
-                      <stop offset="100%" stopColor="#843021" />
-                    </linearGradient>
-                  </defs>
-                  <rect x="3" y="3" width="94" height="94" rx="22" fill="url(#tile-bg-4)" stroke="#E0D6C4" strokeWidth="1.5" />
-                  <rect x="5" y="5" width="90" height="90" rx="20" fill="none" stroke="#FFFFFF" strokeOpacity="0.8" strokeWidth="1" />
-                  <path d="M55 76 C65 64 74 68 85 78 L85 88 L55 88 Z" fill="#D6B898" opacity="0.6" />
-                  <path d="M68 72 C74 65 80 67 85 73 L85 80 L68 80 Z" fill="#B89472" opacity="0.8" />
-                  {/* Bong bóng âm thanh */}
-                  <g>
-                    <rect x="54" y="20" width="34" height="24" rx="10" fill="url(#speech-bubble-red)" stroke="#682519" strokeWidth="1" />
-                    <polygon points="56,38 49,43 58,42" fill="#843021" />
-                    <line x1="60" y1="32" x2="60" y2="32" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" />
-                    <line x1="64" y1="28" x2="64" y2="36" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" />
-                    <line x1="68" y1="26" x2="68" y2="38" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" />
-                    <line x1="72" y1="24" x2="72" y2="40" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" />
-                    <line x1="76" y1="27" x2="76" y2="37" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" />
-                    <line x1="80" y1="30" x2="80" y2="34" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" />
-                  </g>
-                  {/* Chân dung cựu chiến binh */}
-                  <g>
-                    <path d="M18 88 C18 76 22 66 32 64 L42 69 L52 64 C60 67 66 76 66 88 Z" fill="url(#jacket-green)" stroke="#2B3920" strokeWidth="1.2" />
-                    <path d="M32 64 L36 76 L42 70 L48 76 L52 64 Z" fill="#6A8753" />
-                    <path d="M42 70 L42 88" stroke="#2B3920" strokeWidth="1.5" />
-                    <rect x="23" y="74" width="11" height="9" rx="1.5" fill="#4B603A" stroke="#2B3920" strokeWidth="0.8" />
-                    <line x1="23" y1="76" x2="34" y2="76" stroke="#2B3920" strokeWidth="1" />
-                    <circle cx="28.5" cy="76" r="1" fill="#D3CBBE" />
-                    <rect x="50" y="74" width="11" height="9" rx="1.5" fill="#4B603A" stroke="#2B3920" strokeWidth="0.8" />
-                    <line x1="50" y1="76" x2="61" y2="76" stroke="#2B3920" strokeWidth="1" />
-                    <circle cx="55.5" cy="76" r="1" fill="#D3CBBE" />
-                    <polygon points="38,62 46,62 42,70" fill="#782E22" />
-                    <rect x="38" y="55" width="8" height="9" rx="2" fill="#C48E66" />
-                    <ellipse cx="42" cy="46" rx="11" ry="13" fill="#D6A078" />
-                    <path d="M31 43 C31 33 36 29 42 29 C48 29 53 33 53 43 C50 36 45 35 42 35 C38 35 34 37 31 43 Z" fill="#EAE6DF" stroke="#BCB5A8" strokeWidth="0.8" />
-                    <path d="M35 41 Q38 40 40 42" stroke="#684732" strokeWidth="1.2" strokeLinecap="round" fill="none" />
-                    <path d="M44 42 Q46 40 49 41" stroke="#684732" strokeWidth="1.2" strokeLinecap="round" fill="none" />
-                    <path d="M36 44 Q38 43 40 45" stroke="#4A3022" strokeWidth="1.2" strokeLinecap="round" fill="none" />
-                    <path d="M44 45 Q46 43 48 44" stroke="#4A3022" strokeWidth="1.2" strokeLinecap="round" fill="none" />
-                    <path d="M38 38 Q42 37 46 38" stroke="#B2825E" strokeWidth="0.8" fill="none" />
-                    <path d="M38 35 Q42 34 46 35" stroke="#B2825E" strokeWidth="0.8" fill="none" />
-                    <path d="M42 43 L41 49 L44 49" stroke="#8A5C3C" strokeWidth="1.2" strokeLinecap="round" fill="none" />
-                    <path d="M38 53 Q42 54 46 53" stroke="#7A4C30" strokeWidth="1.2" strokeLinecap="round" fill="none" />
-                    <path d="M34 50 Q42 59 50 50" stroke="#B2825E" strokeWidth="0.8" fill="none" />
-                  </g>
+                  <circle cx="50" cy="50" r="42" fill="#DA251D" stroke="#A01B18" strokeWidth="1.5" />
+                  <circle cx="50" cy="50" r="39" fill="none" stroke="#FFD700" strokeOpacity="0.4" strokeWidth="1" />
+                  <polygon points="50.00,28.00 55.00,43.12 70.92,43.20 58.08,52.63 62.93,67.80 50.00,58.50 37.07,67.80 41.92,52.63 29.08,43.20 45.00,43.12" fill="#FFD700" />
                 </svg>
               </div>
               <h3 className="title-serif text-lg font-bold text-[#181513] leading-snug">
@@ -596,7 +436,7 @@ export const ReportInfographicArticle: React.FC = () => {
                       Tọa độ: <span className="font-mono font-semibold text-[#2d2926]">10.78462 - 106.66466</span>
                     </div>
                     <div className="text-xs font-bold text-[#181513]">
-                      Diện tích: <span className="font-extrabold">khoảng 800m2</span>
+                      Diện tích: <span className="font-extrabold">khoảng 800m²</span>
                     </div>
                   </div>
 
@@ -609,7 +449,7 @@ export const ReportInfographicArticle: React.FC = () => {
                       Tọa độ: <span className="font-mono font-semibold text-[#2d2926]">10.78393 - 106.66458</span>
                     </div>
                     <div className="text-xs font-bold text-[#181513]">
-                      Diện tích: <span className="font-extrabold">khoảng 1.200m2</span>
+                      Diện tích: <span className="font-extrabold">khoảng 1.200m²</span>
                     </div>
                   </div>
 
@@ -622,7 +462,7 @@ export const ReportInfographicArticle: React.FC = () => {
                       Tọa độ: <span className="font-mono font-semibold text-[#2d2926]">10.78433 - 106.66443</span>
                     </div>
                     <div className="text-xs font-bold text-[#181513]">
-                      Diện tích: <span className="font-extrabold">khoảng 500m2</span>
+                      Diện tích: <span className="font-extrabold">khoảng 500m²</span>
                     </div>
                   </div>
 
@@ -632,7 +472,7 @@ export const ReportInfographicArticle: React.FC = () => {
                       KHU VỰC TÌM KIẾM MỞ RỘNG
                     </span>
                     <div className="text-xs font-bold text-[#181513] mt-2">
-                      Diện tích: <span className="font-extrabold">khoảng 5.800m2</span>
+                      Diện tích: <span className="font-extrabold">khoảng 5.800m²</span>
                     </div>
                   </div>
                 </div>
