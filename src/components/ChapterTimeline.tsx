@@ -17,7 +17,7 @@ export const ChapterTimeline: React.FC = () => {
 
   return (
     <section id="moc-son" className="relative py-24 sm:py-32 bg-[#F7F4EE] border-b border-stone-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-stone-900 tracking-tight leading-tight">
@@ -57,7 +57,7 @@ export const ChapterTimeline: React.FC = () => {
                       )}
 
                       <div className="flex-1 min-w-0">
-                        {/* Số mốc thời gian nổi bật: huy hiệu sắc nét, font chữ chân phương không số 0 ở trước */}
+                        {/* Số mốc thời gian nổi bật */}
                         <div className="mb-1.5 flex items-center">
                           <span
                             className={`inline-flex items-center font-sans text-xs sm:text-sm font-extrabold tabular-nums tracking-tight px-2.5 py-0.5 rounded-md transition-colors ${
@@ -70,8 +70,9 @@ export const ChapterTimeline: React.FC = () => {
                           </span>
                         </div>
 
+                        {/* Tiêu đề hiển thị đầy đủ trọn vẹn (không bị cắt bớt bằng line-clamp) */}
                         <h4
-                          className={`font-serif text-sm sm:text-[15px] leading-snug line-clamp-1 transition-colors ${
+                          className={`font-serif text-sm sm:text-[15px] leading-snug transition-colors ${
                             isSelected
                               ? 'font-bold text-red-950'
                               : 'font-semibold text-stone-900 group-hover:text-red-800'
@@ -79,13 +80,10 @@ export const ChapterTimeline: React.FC = () => {
                         >
                           {milestone.title}
                         </h4>
-                        <p className="text-xs text-stone-600 mt-1 line-clamp-2 leading-relaxed font-sans">
-                          {milestone.summary}
-                        </p>
                       </div>
 
                       <ChevronRight
-                        className={`w-4 h-4 mt-2 shrink-0 transition-transform ${
+                        className={`w-4 h-4 self-center shrink-0 transition-transform ${
                           isSelected ? 'text-red-700 translate-x-0.5' : 'text-stone-300 group-hover:text-stone-400'
                         }`}
                       />

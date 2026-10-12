@@ -19,14 +19,14 @@ export const HeroCover: React.FC<HeroCoverProps> = () => {
       {/* 1. TOP BLOCK: Chữ "Chiến dịch tìm kiếm..." hiển thị 3 dòng trên di động */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pointer-events-none pt-2 sm:pt-4">
         <div className="inline-block">
-          {/* Hiển thị trên di động: đúng 3 dòng theo yêu cầu */}
-          <div className="block sm:hidden text-xs font-sans font-medium uppercase tracking-widest text-white/95 leading-relaxed">
+          {/* Hiển thị trên di động: đúng 3 dòng theo yêu cầu, khoảng cách chữ bình thường (tracking-normal) */}
+          <div className="block sm:hidden text-xs font-sans font-medium uppercase tracking-normal text-white/95 leading-relaxed">
             <p>Chiến dịch tìm kiếm, quy tập</p>
             <p className="mt-0.5">và xác định danh tính hài cốt liệt sĩ</p>
             <p className="mt-0.5 text-white/90">trên địa bàn TPHCM</p>
           </div>
-          {/* Hiển thị trên màn hình lớn */}
-          <div className="hidden sm:block text-sm md:text-base font-sans font-medium uppercase tracking-widest text-white/95 leading-relaxed">
+          {/* Hiển thị trên màn hình lớn: khoảng cách chữ bình thường (tracking-normal) */}
+          <div className="hidden sm:block text-sm md:text-base font-sans font-medium uppercase tracking-normal text-white/95 leading-relaxed">
             <p>Chiến dịch tìm kiếm, quy tập và xác định danh tính hài cốt liệt sĩ</p>
             <p className="mt-0.5 text-white/90">trên địa bàn TPHCM</p>
           </div>
