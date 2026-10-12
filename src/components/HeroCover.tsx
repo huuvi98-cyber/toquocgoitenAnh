@@ -36,21 +36,21 @@ export const HeroCover: React.FC<HeroCoverProps> = () => {
       {/* KHOẢNG TRỐNG TÔN VINH NGÔI SAO VÀNG NẰM DƯỚI ĐƯỜNG GẠCH NGANG & TRÊN CHỮ TỔ QUỐC */}
       <div className="flex-1 min-h-[12vh] sm:min-h-[22vh] pointer-events-none" />
 
-      {/* 2. TITLE BLOCK: "Tổ quốc", "gọi tên", "Anh" to hơn nữa, cực kỳ nổi bật trên di động */}
+      {/* 2. TITLE BLOCK: "Tổ quốc", "gọi tên", "Anh" - Mobile giữ nguyên đẹp mắt, PC nhỏ lại xíu theo yêu cầu */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pointer-events-none pt-2 sm:pt-4 pb-2">
         <h1 className="font-serif italic text-white tracking-tight select-none flex flex-col items-center">
-          <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black sm:font-bold leading-[0.88] drop-shadow-md">
+          <span className="block text-6xl md:text-7xl lg:text-[5.25rem] font-black sm:font-bold leading-[0.88] drop-shadow-md">
             Tổ quốc
           </span>
-          <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-white/95 leading-[0.9] mt-2.5 sm:mt-4 -translate-x-10 sm:-translate-x-20 md:-translate-x-28">
+          <span className="block text-3xl md:text-4xl lg:text-[2.6rem] font-medium text-white/95 leading-[0.9] mt-2.5 sm:mt-3 md:mt-3.5 -translate-x-10 sm:-translate-x-16 md:-translate-x-20">
             gọi tên
           </span>
-          <div className="relative inline-flex items-center -mt-5 sm:-mt-8 md:-mt-10 translate-x-6 sm:translate-x-10 md:translate-x-14">
-            <span className="block text-7xl sm:text-8xl md:text-9xl lg:text-[10.5rem] font-black text-white italic leading-[0.82] tracking-tighter drop-shadow-lg">
+          <div className="relative inline-flex items-center -mt-5 sm:-mt-6 md:-mt-7 translate-x-6 sm:translate-x-8 md:translate-x-10">
+            <span className="block text-7xl md:text-8xl lg:text-[7.25rem] font-black text-white italic leading-[0.82] tracking-tighter drop-shadow-lg">
               Anh
             </span>
             {/* Nhành hoa cúc trắng hơi cong, nằm phía chân chữ Anh */}
-            <div className="absolute -left-3 sm:-left-4 md:-left-6 -right-6 sm:-right-8 md:-right-10 -bottom-2 sm:-bottom-3.5 md:-bottom-5 pointer-events-none">
+            <div className="absolute -left-3 sm:-left-4 md:-left-5 -right-6 sm:-right-8 -bottom-2 sm:-bottom-3 md:-bottom-3.5 pointer-events-none">
               <WhiteChrysanthemumSprig className="w-full h-auto" />
             </div>
           </div>
@@ -73,7 +73,7 @@ export const HeroCover: React.FC<HeroCoverProps> = () => {
             <p>gọi tên mình</p>
           </div>
           <div className="pt-3">
-            <span className="inline-block text-[11px] sm:text-xs font-sans not-italic text-white/90 tracking-wide border-t border-white/25 pt-2 px-3">
+            <span className="inline-block text-[11px] sm:text-xs font-sans not-italic text-white/90 tracking-wide pt-1 px-3">
               — Trích <span className="italic font-serif">&ldquo;Tổ quốc gọi tên&rdquo;</span> · Nguyễn Phan Quế Mai —
             </span>
           </div>

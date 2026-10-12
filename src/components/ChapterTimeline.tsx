@@ -18,12 +18,8 @@ export const ChapterTimeline: React.FC = () => {
   return (
     <section id="moc-son" className="relative py-24 sm:py-32 bg-[#F7F4EE] border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header with refined typography and accent tag */}
+        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-100/90 border border-red-200/80 text-red-800 text-xs font-bold tracking-widest uppercase mb-3 shadow-xs">
-            <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse" />
-            Dòng sự kiện lịch sử
-          </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-stone-900 tracking-tight leading-tight">
             Hoạt động tìm kiếm
             <span className="block mt-1 sm:mt-2 text-red-900">tại Công viên Lê Thị Riêng</span>
@@ -130,11 +126,11 @@ export const ChapterTimeline: React.FC = () => {
               </div>
             </div>
 
-            {/* Photo Caption & Source Attribution Bar */}
+            {/* Photo Caption & Source Attribution Bar - Chú thích ảnh font không chân (font-sans) */}
             {(selectedMilestone.imageCaption || selectedMilestone.imageSource) && (
               <div className="px-5 sm:px-6 py-2.5 border-b border-stone-100 bg-stone-50/50 text-xs sm:text-sm text-stone-700 flex flex-col sm:flex-row sm:items-baseline justify-between gap-3">
                 {selectedMilestone.imageCaption && (
-                  <div className="flex items-start gap-2 italic leading-relaxed text-stone-700 font-serif">
+                  <div className="flex items-start gap-2 italic leading-relaxed text-stone-700 font-sans">
                     <Camera className="w-3.5 h-3.5 text-stone-400 shrink-0 mt-0.5 not-italic" />
                     <span>{selectedMilestone.imageCaption}</span>
                   </div>
@@ -149,12 +145,6 @@ export const ChapterTimeline: React.FC = () => {
 
             {/* Dossier Content Body */}
             <div className="p-6 sm:p-8">
-              <div className="flex items-center gap-2 mb-2 text-xs sm:text-sm font-bold uppercase tracking-wider text-red-700 font-sans">
-                <span>Mốc thời gian trọng điểm</span>
-                <span className="text-stone-300">•</span>
-                <span className="text-stone-500 font-medium normal-case">Tư liệu lịch sử</span>
-              </div>
-
               <h3 className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-stone-950 mb-2 leading-snug tracking-tight">
                 {selectedMilestone.title}
               </h3>
@@ -165,8 +155,9 @@ export const ChapterTimeline: React.FC = () => {
                 </p>
               )}
 
+              {/* Chi tiết nội dung - Bỏ, không dùng dropcap */}
               <div className="text-sm sm:text-base leading-relaxed sm:leading-loose text-stone-800 space-y-4 text-justify font-sans">
-                <p className="first-letter:text-3xl first-letter:font-serif first-letter:font-bold first-letter:text-red-800 first-letter:mr-1.5 first-letter:float-left">
+                <p>
                   {selectedMilestone.details}
                 </p>
               </div>

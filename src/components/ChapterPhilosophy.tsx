@@ -9,9 +9,9 @@ export const ChapterPhilosophy: React.FC = () => {
         <div className="my-6 sm:my-10 relative">
           {/* Bố cục: Ảnh TBT Tô Lâm ở trên, chữ canh giữa */}
           <div className="flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">
-            {/* Hình tròn TBT Tô Lâm to hơn, nền đỏ, viền trắng mảnh */}
+            {/* Hình tròn TBT Tô Lâm to hơn nổi bật, nền đỏ, viền trắng mảnh trang trọng */}
             <div className="shrink-0 flex flex-col items-center">
-              <div className="w-36 h-36 sm:w-44 sm:h-44 md:w-48 md:h-48 rounded-full overflow-hidden bg-red-700 border-2 sm:border-[3px] border-white shadow-lg">
+              <div className="w-48 h-48 sm:w-60 sm:h-60 md:w-64 md:h-64 rounded-full overflow-hidden bg-red-700 border-[3px] sm:border-4 border-white shadow-xl">
                 <img
                   src={toLamPortrait}
                   alt="Tổng Bí thư, Chủ tịch nước Tô Lâm"

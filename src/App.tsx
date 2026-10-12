@@ -126,7 +126,7 @@ export default function App() {
               </p>
             </div>
 
-            <p className="drop-cap text-justify">
+            <p className="text-justify">
               Trường phái Ngoại giao Cây tre Việt Nam là kết tinh giữa hàng nghìn năm truyền thống nhân ái, hòa hiếu, kiên cường của dân tộc và tư tưởng ngoại giao Hồ Chí Minh. Được Cố Tổng Bí thư Nguyễn Phú Trọng đúc kết sâu sắc với ba đặc trưng cốt lõi: gốc vững, thân chắc, cành uyển chuyển.
             </p>
 

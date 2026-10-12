@@ -44,10 +44,10 @@ export const AnimatedVietnamFlag: React.FC<AnimatedVietnamFlagProps> = ({
       }
       ctx.putImageData(imgData, 0, 0);
 
-      // 2. Central Golden Five-Pointed Star - Dưới đường gạch ngang & Trên chữ Tổ quốc
+      // 2. Central Golden Five-Pointed Star - Nhỏ lại xíu, thanh thoát và trang nhã
       const cx = texW / 2;
       const cy = texH * 0.33; // Placed cleanly below the top horizontal line
-      const outerR = texH * 0.20; // Crisp star radius, perfect clearance
+      const outerR = texH * 0.16; // Nhỏ lại xíu theo yêu cầu, tạo khoảng đệm thanh thoát
       const innerR = outerR * 0.381966; // Golden ratio star inner radius
 
       ctx.save();
