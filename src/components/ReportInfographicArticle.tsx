@@ -555,9 +555,12 @@ export const ReportInfographicArticle: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             {/* CỘT TRÁI: BẢN ĐỒ THỰC ĐỊA & HIỆU ỨNG NGHIÊNG 3D (7 cols) */}
             <div className="lg:col-span-7 neu-card-static p-6">
-              <div className="border-b border-[#e7e1d5] pb-3 mb-5">
-                <h2 className="title-serif text-xl sm:text-2xl font-bold text-[#181513]">
-                  Sơ đồ công viên Lê Thị Riêng
+              <div className="border-b border-[#e7e1d5] pb-4 mb-5">
+                <h2 className="title-serif text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#181513] leading-tight tracking-tight">
+                  Sơ đồ tìm kiếm, quy tập hài cốt liệt sĩ
+                  <span className="block mt-1 sm:mt-1.5 text-xl sm:text-2xl lg:text-3xl font-bold text-[#b5121b]">
+                    tại Công viên Lê Thị Riêng
+                  </span>
                 </h2>
               </div>
 
@@ -569,7 +572,7 @@ export const ReportInfographicArticle: React.FC = () => {
               >
                 <img
                   src="/CV.jpg"
-                  alt="Sơ đồ công viên Lê Thị Riêng"
+                  alt="Sơ đồ tìm kiếm, quy tập hài cốt liệt sĩ tại Công viên Lê Thị Riêng"
                   className="w-full h-auto block rounded-xl pointer-events-none select-none"
                   onError={(e) => {
                     e.currentTarget.src = './CV.jpg';
@@ -874,8 +877,6 @@ export const ReportInfographicArticle: React.FC = () => {
                   <rect x="194" y="42" width="12" height="6" rx="2" fill="#e0a030" />
                   <path d="M330,40 L345,65 L330,60 L315,65 Z" fill="#c5221f" opacity="0.8" />
                   <text x="330" y="32" fill="#e0a030" fontSize="11" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">N</text>
-                  <rect x="16" y="16" width="76" height="22" rx="4" fill="#c5221f" />
-                  <text x="54" y="31" fill="#ffffff" fontSize="10.5" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">SGGP.VN</text>
                 </svg>
               </div>
               <div className="p-4 flex flex-col flex-1">
@@ -931,8 +932,6 @@ export const ReportInfographicArticle: React.FC = () => {
                   <path d="M120,185 L125,170 L128,170 L130,185 L126,185 Z" fill="#e0a030" />
                   <circle cx="126" cy="166" r="3" fill="#e0a030" />
                   <rect x="122" y="172" width="4" height="6" fill="#b87920" />
-                  <rect x="16" y="16" width="76" height="22" rx="4" fill="#c5221f" />
-                  <text x="54" y="31" fill="#ffffff" fontSize="10.5" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">SGGP.VN</text>
                 </svg>
               </div>
               <div className="p-4 flex flex-col flex-1">
@@ -997,8 +996,6 @@ export const ReportInfographicArticle: React.FC = () => {
                   <circle cx="330" cy="120" r="30" fill="none" stroke="#38bdf8" strokeWidth="1.5" strokeDasharray="4 4" opacity="0.5" />
                   <circle cx="330" cy="120" r="6" fill="#4ade80" />
                   <text x="330" y="165" fill="#38bdf8" fontSize="10" fontWeight="bold" textAnchor="middle" fontFamily="monospace">GEN: 9.854 MẪU</text>
-                  <rect x="16" y="16" width="76" height="22" rx="4" fill="#c5221f" />
-                  <text x="54" y="31" fill="#ffffff" fontSize="10.5" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">SGGP.VN</text>
                 </svg>
               </div>
               <div className="p-4 flex flex-col flex-1">
@@ -1056,8 +1053,6 @@ export const ReportInfographicArticle: React.FC = () => {
                   <path d="M275,170 Q285,140 270,110" fill="none" stroke="#ffd700" strokeWidth="1.5" strokeOpacity="0.4" />
                   <rect x="188" y="195" width="24" height="20" fill="#a2681a" rx="2" />
                   <rect x="175" y="215" width="50" height="10" fill="#6b4412" rx="2" />
-                  <rect x="16" y="16" width="76" height="22" rx="4" fill="#c5221f" />
-                  <text x="54" y="31" fill="#ffffff" fontSize="10.5" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">SGGP.VN</text>
                 </svg>
               </div>
               <div className="p-4 flex flex-col flex-1">
@@ -1117,8 +1112,6 @@ export const ReportInfographicArticle: React.FC = () => {
                   <circle cx="78" cy="182" r="3" fill="#ffd572" />
                   <path d="M280,195 Q270,150 290,120 T280,70" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" opacity="0.35" />
                   <path d="M295,195 Q305,155 290,130 T305,80" fill="none" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" opacity="0.25" />
-                  <rect x="16" y="16" width="76" height="22" rx="4" fill="#c5221f" />
-                  <text x="54" y="31" fill="#ffffff" fontSize="10.5" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">SGGP.VN</text>
                 </svg>
               </div>
               <div className="p-4 flex flex-col flex-1">

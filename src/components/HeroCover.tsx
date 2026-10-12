@@ -36,7 +36,7 @@ export const HeroCover: React.FC<HeroCoverProps> = () => {
       {/* KHOẢNG TRỐNG TÔN VINH NGÔI SAO VÀNG NẰM DƯỚI ĐƯỜNG GẠCH NGANG & TRÊN CHỮ TỔ QUỐC */}
       <div className="flex-1 min-h-[12vh] sm:min-h-[22vh] pointer-events-none" />
 
-      {/* 2. TITLE BLOCK: "Tổ quốc", "gọi tên", "Anh" - Mobile giữ nguyên đẹp mắt, PC nhỏ lại xíu theo yêu cầu */}
+      {/* 2. TITLE BLOCK: "Tổ quốc", "gọi tên", "Anh" */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pointer-events-none pt-2 sm:pt-4 pb-2">
         <h1 className="font-serif italic text-white tracking-tight select-none flex flex-col items-center">
           <span className="block text-6xl md:text-7xl lg:text-[5.25rem] font-black sm:font-bold leading-[0.88] drop-shadow-md">
@@ -57,9 +57,9 @@ export const HeroCover: React.FC<HeroCoverProps> = () => {
         </h1>
       </div>
 
-      {/* 3. POEM BLOCK: Bài thơ chữ nhỏ hơn 1 size */}
+      {/* 3. POEM BLOCK: Bài thơ & Dòng trích nguồn */}
       <div className="relative z-10 max-w-xl mx-auto px-4 sm:px-6 text-center pointer-events-none pt-6 sm:pt-8 pb-6 sm:pb-10">
-        {/* Poetic Verse Stanza: Màu trắng, 1 co chữ, Tổ quốc không Cap, không bóng đổ */}
+        {/* Poetic Verse Stanza */}
         <div className="text-white font-serif italic text-sm sm:text-base leading-relaxed space-y-1">
           <p className="tracking-wide">
             Thắp lên ngọn đuốc Hòa bình, bao người đã ngã
@@ -72,9 +72,10 @@ export const HeroCover: React.FC<HeroCoverProps> = () => {
             <p>Tổ quốc</p>
             <p>gọi tên mình</p>
           </div>
+          {/* Dòng trích nguồn: Bỏ dấu gạch đầu & cuối câu, chữ nhỏ hơn 7% (dùng text-[10px] sm:text-[11px]) */}
           <div className="pt-3">
-            <span className="inline-block text-[11px] sm:text-xs font-sans not-italic text-white/90 tracking-wide pt-1 px-3">
-              — Trích <span className="italic font-serif">&ldquo;Tổ quốc gọi tên&rdquo;</span> · Nguyễn Phan Quế Mai —
+            <span className="inline-block text-[10px] sm:text-[11px] font-sans not-italic text-white/90 tracking-wide pt-1 px-3">
+              Trích <span className="italic font-serif">&ldquo;Tổ quốc gọi tên&rdquo;</span> · Nguyễn Phan Quế Mai
             </span>
           </div>
         </div>

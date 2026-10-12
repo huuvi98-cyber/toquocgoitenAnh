@@ -113,7 +113,7 @@ export const TIMELINE_MILESTONES: TimelineMilestone[] = [
     summary: 'Ban Chỉ đạo quốc gia, UBND TPHCM, Bộ Tư lệnh Quân khu 7 tổ chức Lễ triển khai tìm kiếm, quy tập hài cốt liệt sĩ.',
     details: 'Ngày 6-7-2026, Ban Chỉ đạo quốc gia tìm kiếm, quy tập và xác định danh tính hài cốt liệt sĩ, UBND TPHCM, Bộ Tư lệnh Quân khu 7 long trọng tổ chức Lễ triển khai tìm kiếm, quy tập hài cốt liệt sĩ tại Công viên Lê Thị Riêng, khẳng định quyết tâm chính trị và nghĩa tình sâu nặng đối với các anh hùng liệt sĩ.',
     imageUrl: imgMilestone0706,
-    imageCaption: 'Lễ triển khai tìm kiếm, quy tập hài cốt liệt sĩ tại Công viên Lê Thị Riêng.',
+    imageCaption: 'Thủ tướng Lê Minh Hưng, Bí thư Thành ủy TPHCM Trần Lưu Quang và các đồng chí nguyên lãnh đạo Đảng, Nhà nước thực hiện nghi thức di quan hài cốt về Nhà Tưởng niệm Liệt sĩ Công viên Lê Thị Riêng.',
     imageSource: 'Ảnh: MẠNH THẮNG',
     quote: {
       text: 'Tìm kiếm, quy tập, xác định danh tính các liệt sĩ là trách nhiệm thiêng liêng trước Tổ quốc, trước Nhân dân; là lương tri, nguyện vọng của mỗi người Việt Nam.',

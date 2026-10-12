@@ -1,39 +1,63 @@
 import React from 'react';
-import toLamPortrait from '../assets/images/regenerated_image_1791719168794.png';
 
 export const ChapterPhilosophy: React.FC = () => {
   return (
-    <section id="triet-ly" className="relative py-12 sm:py-20 bg-[#FBF9F5] border-b border-stone-200">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Trích dẫn phát biểu của Tổng Bí thư, Chủ tịch nước Tô Lâm - Bỏ box nền */}
-        <div className="my-6 sm:my-10 relative">
-          {/* Bố cục: Ảnh TBT Tô Lâm ở trên, chữ canh giữa */}
-          <div className="flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">
-            {/* Hình tròn TBT Tô Lâm to hơn nổi bật, nền đỏ, viền trắng mảnh trang trọng */}
-            <div className="shrink-0 flex flex-col items-center">
-              <div className="w-48 h-48 sm:w-60 sm:h-60 md:w-64 md:h-64 rounded-full overflow-hidden bg-red-700 border-[3px] sm:border-4 border-white shadow-xl">
-                <img
-                  src={toLamPortrait}
-                  alt="Tổng Bí thư, Chủ tịch nước Tô Lâm"
-                  className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500 bg-red-700"
-                  onError={(e) => {
-                    e.currentTarget.src = 'https://image.sggp.org.vn/Uploaded/2026/mzzan/2026_04_06/info-dc-tbt-to-lam-bia-3018-9822.jpg';
-                  }}
-                />
-              </div>
+    <section id="triet-ly" className="relative py-14 sm:py-24 bg-[#FAF6EE] border-b border-stone-200 overflow-hidden min-h-[560px] sm:min-h-[580px] flex items-center">
+      
+      {/* 
+        HÌNH NỀN:
+        - Mobile: Đặt ở góc dưới bên phải
+        - Desktop: Chiếm 60% chiều rộng bên phải
+      */}
+      <div className="absolute right-0 bottom-0 top-auto sm:top-0 h-[50%] sm:h-full w-full sm:w-[70%] md:w-[60%] pointer-events-none select-none z-0 overflow-hidden">
+        <img
+          src="/To Lam-bg.jpg"
+          alt="Tổng Bí thư Tô Lâm dâng hương tưởng niệm các anh hùng liệt sĩ"
+          className="w-full h-full object-cover object-[85%_100%] sm:object-right-bottom filter contrast-[1.05] brightness-[1.01]"
+          onError={(e) => {
+            e.currentTarget.src = '/to-lam-bg-uploaded.jpg';
+          }}
+        />
+        
+        {/* Lớp phủ Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-[#FAF6EE]/40 to-[#FAF6EE] sm:hidden" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FAF6EE] via-[#FAF6EE]/50 via-30% to-transparent hidden sm:block opacity-90" />
+      </div>
+
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="max-w-md sm:max-w-[500px] text-left mb-60 sm:mb-0">
+
+          {/* Blockquote trích dẫn phát biểu - Căn đều */}
+          <blockquote className="font-serif text-sm sm:text-base md:text-lg italic font-normal leading-relaxed text-stone-900 mb-4 text-justify drop-shadow-[0_1px_1px_rgba(255,255,255,0.9)]">
+            &ldquo;Đối với Đảng, Nhà nước và Nhân dân Việt Nam, tìm kiếm, quy tập, xác định danh tính các liệt sĩ là trách nhiệm thiêng liêng trước Tổ quốc, trước Nhân dân; là lương tri, nguyện vọng của mỗi người Việt Nam. Nhân dân ta, Đảng ta không bao giờ quên những người đã hy sinh vì đất nước, vì dân tộc, đó là đạo lý và truyền thống văn hóa Việt Nam.
+            <br className="my-2 block" />
+            Trước anh linh các anh hùng liệt sĩ, chúng tôi nguyện làm hết sức mình để hoàn thành sứ mệnh cao cả này bằng tất cả trách nhiệm, trí tuệ và tình cảm sâu nặng nhất&rdquo;.
+          </blockquote>
+
+          {/* 
+            Khối danh xưng tác giả & ngữ cảnh phát biểu:
+            - Mobile: Ngắt dòng chuẩn xác theo đúng yêu cầu:
+                phát biểu tại Lễ dâng hoa, dâng hương
+                tưởng niệm các Anh hùng liệt sĩ tại
+                Công viên Lê Thị Riêng, ngày 17-7
+            - Desktop: Ngắt dòng tự nhiên vừa vặn
+          */}
+          <div className="pt-2.5 border-t border-stone-300/60 max-w-full text-right font-sans leading-relaxed text-[11px] sm:text-xs text-stone-600 font-normal">
+            <div className="uppercase tracking-wider font-semibold text-stone-800 mb-0.5">
+              Tổng Bí thư, Chủ tịch nước Tô Lâm
+            </div>
+            
+            {/* Hiển thị ngắt dòng dành riêng cho Mobile */}
+            <div className="normal-case tracking-normal text-stone-600 sm:hidden">
+              phát biểu tại Lễ dâng hoa, dâng hương<br />
+              tưởng niệm các Anh hùng liệt sĩ tại<br />
+              Công viên Lê Thị Riêng, ngày 17-7
             </div>
 
-            {/* Khối trích dẫn & Thông tin tác giả: Canh giữa */}
-            <div className="w-full flex flex-col items-center text-center">
-              <blockquote className="font-serif text-base sm:text-lg md:text-xl italic font-normal sm:font-medium leading-relaxed mb-6 text-red-950/90 text-center max-w-2xl mx-auto animate-fade-in transition-opacity duration-1000 ease-out">
-                &ldquo;Đối với Đảng, Nhà nước và Nhân dân Việt Nam, tìm kiếm, quy tập, xác định danh tính các liệt sĩ là trách nhiệm thiêng liêng trước Tổ quốc, trước Nhân dân; là lương tri, nguyện vọng của mỗi người Việt Nam. Nhân dân ta, Đảng ta không bao giờ quên những người đã hy sinh vì đất nước, vì dân tộc, đó là đạo lý và truyền thống văn hóa Việt Nam.
-                <br className="my-2.5 block" />
-                Trước anh linh các anh hùng liệt sĩ, chúng tôi nguyện làm hết sức mình để hoàn thành sứ mệnh cao cả này bằng tất cả trách nhiệm, trí tuệ và tình cảm sâu nặng nhất&rdquo;.
-              </blockquote>
-
-              <div className="text-xs sm:text-sm text-red-900 font-bold uppercase tracking-wider text-center">
-                Tổng Bí thư, Chủ tịch nước Tô Lâm
-              </div>
+            {/* Hiển thị ngắt dòng dành cho Desktop (Màn hình lớn hơn) */}
+            <div className="normal-case tracking-normal text-stone-600 hidden sm:block">
+              phát biểu tại Lễ dâng hoa, dâng hương tưởng niệm các Anh hùng liệt sĩ<br />
+              tại Công viên Lê Thị Riêng, ngày 17-7
             </div>
           </div>
         </div>
