@@ -8,6 +8,7 @@ import { TopNav } from './components/TopNav';
 import { HeroCover } from './components/HeroCover';
 import { ChapterPhilosophy } from './components/ChapterPhilosophy';
 import { ChapterTimeline } from './components/ChapterTimeline';
+import { ReportInfographicArticle } from './components/ReportInfographicArticle';
 import { AudioNarrationBar } from './components/AudioNarrationBar';
 import { EditorialFooter } from './components/EditorialFooter';
 import { TIMELINE_MILESTONES } from './data/diplomacyData';
@@ -76,6 +77,9 @@ export default function App() {
 
           {/* Section 2: Historical Milestones & Archival Scrollytelling */}
           <ChapterTimeline />
+
+          {/* Section 3: Chuyên đề Infographic 500 Ngày Tìm Hài Cốt Liệt Sĩ, Bản đồ & Loạt bài SGGP */}
+          <ReportInfographicArticle />
         </main>
       ) : (
         /* CLEAN TYPOGRAPHICAL READING MODE (BROADSHEET ESSAY) */
@@ -174,6 +178,10 @@ export default function App() {
               Bước vào kỷ nguyên mới — kỷ nguyên vươn mình của dân tộc, nền ngoại giao Việt Nam mang sứ mệnh lịch sử tiên phong bảo vệ Tổ quốc từ sớm, từ xa, phục vụ đắc lực mục tiêu đưa đất nước trở thành quốc gia phát triển có thu nhập cao vào năm 2045.
             </p>
           </article>
+
+          <div className="mt-16 -mx-4 sm:-mx-6">
+            <ReportInfographicArticle />
+          </div>
         </main>
       )}
 
