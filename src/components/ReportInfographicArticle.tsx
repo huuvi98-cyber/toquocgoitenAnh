@@ -481,6 +481,16 @@ export const ReportInfographicArticle: React.FC = () => {
 
             {/* CỘT PHẢI: CÁC SỐ LIỆU INFOGRAPHIC TƯƠNG TÁC (5 cols) */}
             <div className="lg:col-span-5 flex flex-col gap-5">
+              {/* Tiêu đề cột số liệu thống kê */}
+              <div className="border-b border-[#e7e1d5] pb-3.5 mb-1">
+                <h3 className="title-serif text-lg sm:text-xl font-extrabold text-[#181513] uppercase tracking-wider leading-snug flex items-start gap-2.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#c5221f] inline-block shrink-0 mt-1.5"></span>
+                  <span>
+                    Toàn cảnh tìm kiếm, quy tập, xác định<br />
+                    danh tính liệt sĩ tại TPHCM
+                  </span>
+                </h3>
+              </div>
               {/* Thẻ 1: Lực lượng lấy mẫu & Rà soát */}
               <div className="neu-card p-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-3.5">
