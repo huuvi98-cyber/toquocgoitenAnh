@@ -695,7 +695,7 @@ export const ReportInfographicArticle: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
             {/* THẺ 1: BÀI 1 — CHẠY ĐUA VỚI THỜI GIAN */}
             <a
-              href="https://www.sggp.org.vn/"
+              href="https://www.sggp.org.vn/contents/preview?content_id=1392879724497983183"
               target="_blank"
               rel="noopener noreferrer"
               className="article-series-card group"
@@ -775,7 +775,7 @@ export const ReportInfographicArticle: React.FC = () => {
 
             {/* THẺ 3: BÀI 3 — ĐỂ CÓ NHỮNG CUỘC TRỞ VỀ */}
             <a
-              href="https://www.sggp.org.vn/"
+              href="https://www.sggp.org.vn/contents/preview?content_id=1213582913103976012"
               target="_blank"
               rel="noopener noreferrer"
               className="article-series-card group"
@@ -815,7 +815,7 @@ export const ReportInfographicArticle: React.FC = () => {
 
             {/* THẺ 4: BÀI 4 — ĐỒNG LÒNG TRƯỚC LỜI HỨA THIÊNG LIÊNG */}
             <a
-              href="https://www.sggp.org.vn/"
+              href="https://www.sggp.org.vn/contents/preview?content_id=1248766735478936783"
               target="_blank"
               rel="noopener noreferrer"
               className="article-series-card group"
@@ -855,7 +855,7 @@ export const ReportInfographicArticle: React.FC = () => {
 
             {/* THẺ 5: BÀI 5 — DƯỚI CỜ TỔ QUỐC ANH VỀ */}
             <a
-              href="https://www.sggp.org.vn/"
+              href="https://www.sggp.org.vn/contents/preview?content_id=1176710240935859663"
               target="_blank"
               rel="noopener noreferrer"
               className="article-series-card group"
