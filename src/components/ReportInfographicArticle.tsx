@@ -483,8 +483,8 @@ export const ReportInfographicArticle: React.FC = () => {
             <div className="lg:col-span-5 flex flex-col gap-5">
               {/* Tiêu đề cột số liệu thống kê */}
               <div className="border-b border-[#e7e1d5] pb-3.5 mb-1">
-                <h3 className="title-serif text-lg sm:text-xl font-extrabold text-[#181513] uppercase tracking-wider leading-snug flex items-start gap-2.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#c5221f] inline-block shrink-0 mt-1.5"></span>
+                <h3 className="title-serif text-[13px] sm:text-base md:text-lg font-extrabold text-[#181513] uppercase tracking-wider leading-snug flex items-start gap-2">
+                  <span className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#c5221f] inline-block shrink-0 mt-1 sm:mt-1.5"></span>
                   <span>
                     Toàn cảnh tìm kiếm, quy tập, xác định<br />
                     danh tính liệt sĩ tại TPHCM
