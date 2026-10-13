@@ -695,7 +695,7 @@ export const ReportInfographicArticle: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
             {/* THẺ 1: BÀI 1 — CHẠY ĐUA VỚI THỜI GIAN */}
             <a
-              href="https://www.sggp.org.vn/nua-the-ky-cho-doi-3-gio-va-chuyen-bay-mang-so-hieu-hy-vong-post868220.html"
+              href="https://www.sggp.org.vn/"
               target="_blank"
               rel="noopener noreferrer"
               className="article-series-card group"
@@ -703,7 +703,7 @@ export const ReportInfographicArticle: React.FC = () => {
             >
               <div className="relative w-full aspect-video overflow-hidden bg-[#1a1614] article-card-thumb">
                 <img
-                  src="/Bai-1.jpg"
+                  src="/Bai-2.jpg"
                   alt="Bìa bài báo phóng sự SGGP 1"
                   className="w-full h-full object-cover block transition-transform duration-500 group-hover:scale-105"
                 />
@@ -735,7 +735,7 @@ export const ReportInfographicArticle: React.FC = () => {
 
             {/* THẺ 2: BÀI 2 — THEO DẤU TÍCH GIỮA CHIẾN TRƯỜNG XƯA */}
             <a
-              href="https://www.sggp.org.vn/"
+              href="https://www.sggp.org.vn/nua-the-ky-cho-doi-3-gio-va-chuyen-bay-mang-so-hieu-hy-vong-post868220.html"
               target="_blank"
               rel="noopener noreferrer"
               className="article-series-card group"
@@ -743,7 +743,7 @@ export const ReportInfographicArticle: React.FC = () => {
             >
               <div className="relative w-full aspect-video overflow-hidden bg-[#1a1614] article-card-thumb">
                 <img
-                  src="/Bai-2.jpg"
+                  src="/Bai-1.jpg"
                   alt="Bìa bài báo phóng sự SGGP 2"
                   className="w-full h-full object-cover block transition-transform duration-500 group-hover:scale-105"
                 />
