@@ -6,9 +6,10 @@ export const ChapterPhilosophy: React.FC = () => {
       
       {/* 
         HÌNH NỀN:
-        - Tablet (sm đến lg): Điều chỉnh tiêu điểm cúp ảnh object-[82%_85%]
-        - Mobile: Góc dưới bên phải
-        - Desktop: Chiếm 48% bên phải
+        - Quay lại giao diện thiết kế cũ (background-cover tràn chiều cao)
+        - Tablet (sm đến lg): Tiêu điểm cúp ảnh object-[82%_85%]
+        - Mobile: Góc dưới bên phải (h-[56%])
+        - Desktop: Chiếm 48% bên phải (lg:w-[48%])
       */}
       <div className="absolute right-0 bottom-0 top-auto lg:top-0 h-[56%] sm:h-[58%] lg:h-full w-full lg:w-[48%] pointer-events-none select-none z-0 overflow-hidden flex items-end lg:items-center justify-end">
         <img
@@ -41,8 +42,7 @@ export const ChapterPhilosophy: React.FC = () => {
           </blockquote>
 
           {/* 
-            Khối danh xưng tác giả & ngữ cảnh phát biểu:
-            - Định dạng ngày tháng liên liền: "ngày 17-7-2026"
+            Khối danh xưng tác giả & ngữ cảnh phát biểu
           */}
           <div className="pt-2.5 border-t border-stone-300/60 max-w-full text-right sm:text-center lg:text-right font-sans leading-relaxed text-[10px] sm:text-xs text-stone-600 font-normal">
             <div className="uppercase tracking-wider font-semibold text-stone-800 mb-0.5 text-right sm:text-center lg:text-right">

@@ -691,33 +691,12 @@ export const ReportInfographicArticle: React.FC = () => {
               className="article-series-card group"
               title="Đọc Bài 1 trên Báo Sài Gòn Giải Phóng"
             >
-              <div className="relative w-full h-44 overflow-hidden bg-[#1a1614] article-card-thumb">
-                <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" className="w-full h-full block transition-transform duration-500 group-hover:scale-105">
-                  <defs>
-                    <linearGradient id="g-art-1" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#1f1812" />
-                      <stop offset="45%" stopColor="#34251a" />
-                      <stop offset="100%" stopColor="#17110c" />
-                    </linearGradient>
-                    <linearGradient id="gold-beam" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" stopColor="#ffd572" stopOpacity="0.4" />
-                      <stop offset="100%" stopColor="#b87920" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="240" fill="url(#g-art-1)" />
-                  <path d="M-20,190 Q120,120 220,160 T420,130" fill="none" stroke="#a2681a" strokeWidth="1.2" strokeOpacity="0.35" />
-                  <path d="M-20,160 Q100,90 200,130 T420,100" fill="none" stroke="#a2681a" strokeWidth="1.2" strokeOpacity="0.25" />
-                  <path d="M-20,220 Q140,150 240,190 T420,160" fill="none" stroke="#a2681a" strokeWidth="1.2" strokeOpacity="0.3" />
-                  <polygon points="200,240 140,0 260,0" fill="url(#gold-beam)" />
-                  <circle cx="200" cy="100" r="52" fill="#241a12" stroke="#b87920" strokeWidth="2.5" strokeDasharray="3 3" />
-                  <circle cx="200" cy="100" r="44" fill="#18110b" stroke="#e0a030" strokeWidth="1.5" />
-                  <line x1="200" y1="100" x2="200" y2="70" stroke="#ffdd88" strokeWidth="2.5" strokeLinecap="round" />
-                  <line x1="200" y1="100" x2="224" y2="108" stroke="#ff4444" strokeWidth="2" strokeLinecap="round" />
-                  <circle cx="200" cy="100" r="4" fill="#ffd572" />
-                  <rect x="194" y="42" width="12" height="6" rx="2" fill="#e0a030" />
-                  <path d="M330,40 L345,65 L330,60 L315,65 Z" fill="#c5221f" opacity="0.8" />
-                  <text x="330" y="32" fill="#e0a030" fontSize="11" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">N</text>
-                </svg>
+              <div className="relative w-full aspect-video overflow-hidden bg-[#1a1614] article-card-thumb">
+                <img
+                  src="public/Bai-1.jpg"
+                  alt="Bìa bài báo phóng sự SGGP 1"
+                  className="w-full h-full object-cover block transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div className="p-4 flex flex-col flex-1">
                 <div className="flex items-center mb-1.5">
@@ -726,10 +705,10 @@ export const ReportInfographicArticle: React.FC = () => {
                   </span>
                 </div>
                 <h3 className="article-card-title title-serif text-base font-bold leading-snug my-1.5 text-[#181513] transition-colors">
-                  Chạy đua với thời gian
+                  Những ngày ở Công viên Lê Thị Riêng...
                 </h3>
                 <p className="text-xs text-[#6e665e] leading-relaxed mb-4 flex-1">
-                  Chiến dịch 500 ngày đêm tìm kiếm, quy tập và xác định danh tính hài cốt liệt sĩ như một cuộc chạy đua với thời gian để khép lại nỗi đau chiến tranh.
+                  Sau gần 60 năm trầm tích dưới lòng đất Nghĩa địa Đô Thành - Chí Hòa xưa (nay là Công viên Lê Thị Riêng), hàng trăm bộ hài cốt cán bộ, chiến sĩ hy sinh trong cuộc Tổng tiến công và nổi dậy Xuân Mậu Thân 1968 đang từng bước được quy tập, xác định danh tính.
                 </p>
                 <div className="flex items-center justify-between pt-3 border-t border-dashed border-[#eee8dc] mt-auto">
                   <span className="text-[11px] font-semibold text-[#9b9389]">Báo SGGP</span>
@@ -752,27 +731,12 @@ export const ReportInfographicArticle: React.FC = () => {
               className="article-series-card group"
               title="Đọc Bài 2 trên Báo Sài Gòn Giải Phóng"
             >
-              <div className="relative w-full h-44 overflow-hidden bg-[#1a1614] article-card-thumb">
-                <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" className="w-full h-full block transition-transform duration-500 group-hover:scale-105">
-                  <defs>
-                    <linearGradient id="g-art-2" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#142019" />
-                      <stop offset="50%" stopColor="#1f3326" />
-                      <stop offset="100%" stopColor="#101913" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="240" fill="url(#g-art-2)" />
-                  <polygon points="-20,240 80,110 180,180 270,70 360,160 420,100 420,240" fill="#0d1510" opacity="0.6" />
-                  <polygon points="40,240 140,80 220,150 310,50 390,130 420,240" fill="#18271e" opacity="0.8" />
-                  <polygon points="-10,240 90,140 180,210 280,110 370,190 420,240" fill="#243b2e" opacity="0.9" />
-                  <path d="M0,170 Q100,150 200,165 T400,155 L400,185 Q300,175 200,185 T0,175 Z" fill="#ffffff" opacity="0.12" />
-                  <circle cx="310" cy="50" r="5" fill="#e0a030" />
-                  <circle cx="310" cy="50" r="11" fill="none" stroke="#e0a030" strokeWidth="1.5" strokeDasharray="2 2" />
-                  <text x="325" y="46" fill="#ffd572" fontSize="10" fontWeight="bold" fontFamily="sans-serif">ĐIỂM CAO 685</text>
-                  <path d="M120,185 L125,170 L128,170 L130,185 L126,185 Z" fill="#e0a030" />
-                  <circle cx="126" cy="166" r="3" fill="#e0a030" />
-                  <rect x="122" y="172" width="4" height="6" fill="#b87920" />
-                </svg>
+              <div className="relative w-full aspect-video overflow-hidden bg-[#1a1614] article-card-thumb">
+                <img
+                  src="public/Bai-2.jpg"
+                  alt="Bìa bài báo phóng sự SGGP 2"
+                  className="w-full h-full object-cover block transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div className="p-4 flex flex-col flex-1">
                 <div className="flex items-center mb-1.5">
@@ -781,10 +745,10 @@ export const ReportInfographicArticle: React.FC = () => {
                   </span>
                 </div>
                 <h3 className="article-card-title title-serif text-base font-bold leading-snug my-1.5 text-[#181513] transition-colors">
-                  Theo dấu tích giữa chiến trường xưa
+                  Nửa thế kỷ chờ đợi, 3 giờ và chuyến bay mang "số hiệu" HY VỌNG
                 </h3>
                 <p className="text-xs text-[#6e665e] leading-relaxed mb-4 flex-1">
-                  Hành trình của các cán bộ, chiến sĩ vượt vách đá tai mèo hiểm trở, băng rừng lội suối tại điểm cao 400 và 685 Vị Xuyên để đưa đồng đội trở về.
+                  Một hành trình đặc biệt đưa 7.104 mẫu sinh phẩm hài cốt liệt sĩ từ TPHCM ra Hà Nội thực hiện giám định ADN để xác định danh tính liệt sĩ. Chuyến bay chỉ vỏn vẹn trong 3 giờ, chở theo niềm hy vọng của hơn nửa thế kỷ chờ đợi.
                 </p>
                 <div className="flex items-center justify-between pt-3 border-t border-dashed border-[#eee8dc] mt-auto">
                   <span className="text-[11px] font-semibold text-[#9b9389]">Báo SGGP</span>
@@ -807,36 +771,12 @@ export const ReportInfographicArticle: React.FC = () => {
               className="article-series-card group"
               title="Đọc Bài 3 trên Báo Sài Gòn Giải Phóng"
             >
-              <div className="relative w-full h-44 overflow-hidden bg-[#1a1614] article-card-thumb">
-                <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" className="w-full h-full block transition-transform duration-500 group-hover:scale-105">
-                  <defs>
-                    <linearGradient id="g-art-3" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#0e1a2b" />
-                      <stop offset="50%" stopColor="#142842" />
-                      <stop offset="100%" stopColor="#0a121e" />
-                    </linearGradient>
-                    <linearGradient id="dna-glow" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="#38bdf8" />
-                      <stop offset="100%" stopColor="#4ade80" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="240" fill="url(#g-art-3)" />
-                  <g transform="translate(100, 30)">
-                    <path d="M0,80 Q50,20 100,80 T200,80" fill="none" stroke="url(#dna-glow)" strokeWidth="3" strokeLinecap="round" />
-                    <path d="M0,80 Q50,140 100,80 T200,80" fill="none" stroke="#60a5fa" strokeWidth="3" strokeLinecap="round" />
-                    <line x1="25" y1="48" x2="25" y2="112" stroke="#93c5fd" strokeWidth="1.8" strokeDasharray="2 3" />
-                    <line x1="50" y1="23" x2="50" y2="137" stroke="#38bdf8" strokeWidth="2" />
-                    <line x1="75" y1="48" x2="75" y2="112" stroke="#93c5fd" strokeWidth="1.8" strokeDasharray="2 3" />
-                    <line x1="100" y1="80" x2="100" y2="80" stroke="#4ade80" strokeWidth="4" />
-                    <line x1="125" y1="112" x2="125" y2="48" stroke="#93c5fd" strokeWidth="1.8" strokeDasharray="2 3" />
-                    <line x1="150" y1="137" x2="150" y2="23" stroke="#4ade80" strokeWidth="2" />
-                    <line x1="175" y1="112" x2="175" y2="48" stroke="#93c5fd" strokeWidth="1.8" strokeDasharray="2 3" />
-                  </g>
-                  <path d="M40,190 L75,190 L70,165 L60,165 L60,135 L50,135 L50,165 L45,165 Z" fill="#60a5fa" opacity="0.4" />
-                  <circle cx="330" cy="120" r="30" fill="none" stroke="#38bdf8" strokeWidth="1.5" strokeDasharray="4 4" opacity="0.5" />
-                  <circle cx="330" cy="120" r="6" fill="#4ade80" />
-                  <text x="330" y="165" fill="#38bdf8" fontSize="10" fontWeight="bold" textAnchor="middle" fontFamily="monospace">GEN: 9.854 MẪU</text>
-                </svg>
+              <div className="relative w-full aspect-video overflow-hidden bg-[#1a1614] article-card-thumb">
+                <img
+                  src="public/Bai-3.jpg"
+                  alt="Bìa bài báo phóng sự SGGP 3"
+                  className="w-full h-full object-cover block transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div className="p-4 flex flex-col flex-1">
                 <div className="flex items-center mb-1.5">
@@ -845,10 +785,10 @@ export const ReportInfographicArticle: React.FC = () => {
                   </span>
                 </div>
                 <h3 className="article-card-title title-serif text-base font-bold leading-snug my-1.5 text-[#181513] transition-colors">
-                  Để có những cuộc trở về
+                  Hơn cả tình yêu
                 </h3>
                 <p className="text-xs text-[#6e665e] leading-relaxed mb-4 flex-1">
-                  Đột phá công nghệ giám định ADN và xây dựng cơ sở dữ liệu gen – chìa khóa mở ra hy vọng trả lại tên cho hàng trăm ngàn liệt sĩ vô danh.
+                  Người ra trận chưa kịp trở về, người ở lại mang theo lời hẹn ước đi qua tuổi thanh xuân, qua bao mùa mưa nắng đằng đẵng đợi chờ. Lời hứa “Đánh thắng trận này rồi anh sẽ về cưới em” đã khắc sâu, trở thành một phần đời của bà Nguyễn Thị Lệ. Để rồi hôm nay, khi kỷ vật cùng hài cốt của người chiến sĩ nằm lại dưới lòng đất Công viên Lê Thị Riêng được tìm thấy...
                 </p>
                 <div className="flex items-center justify-between pt-3 border-t border-dashed border-[#eee8dc] mt-auto">
                   <span className="text-[11px] font-semibold text-[#9b9389]">Báo SGGP</span>
@@ -871,29 +811,12 @@ export const ReportInfographicArticle: React.FC = () => {
               className="article-series-card group"
               title="Đọc Bài 4 trên Báo Sài Gòn Giải Phóng"
             >
-              <div className="relative w-full h-44 overflow-hidden bg-[#1a1614] article-card-thumb">
-                <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" className="w-full h-full block transition-transform duration-500 group-hover:scale-105">
-                  <defs>
-                    <linearGradient id="g-art-4" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#2a1114" />
-                      <stop offset="50%" stopColor="#42181c" />
-                      <stop offset="100%" stopColor="#1e0a0d" />
-                    </linearGradient>
-                    <radialGradient id="star-glow" cx="50%" cy="50%" r="50%">
-                      <stop offset="0%" stopColor="#ffd700" stopOpacity="0.8" />
-                      <stop offset="60%" stopColor="#e0a030" stopOpacity="0.3" />
-                      <stop offset="100%" stopColor="#a2681a" stopOpacity="0" />
-                    </radialGradient>
-                  </defs>
-                  <rect width="400" height="240" fill="url(#g-art-4)" />
-                  <circle cx="200" cy="115" r="90" fill="url(#star-glow)" />
-                  <polygon points="200,60 212,98 252,98 220,122 232,160 200,136 168,160 180,122 148,98 188,98" fill="#ffd700" stroke="#f59e0b" strokeWidth="1.5" />
-                  <path d="M130,175 Q160,195 200,195 T270,175" fill="none" stroke="#ffd700" strokeWidth="2" strokeOpacity="0.7" />
-                  <path d="M125,170 Q115,140 130,110" fill="none" stroke="#ffd700" strokeWidth="1.5" strokeOpacity="0.4" />
-                  <path d="M275,170 Q285,140 270,110" fill="none" stroke="#ffd700" strokeWidth="1.5" strokeOpacity="0.4" />
-                  <rect x="188" y="195" width="24" height="20" fill="#a2681a" rx="2" />
-                  <rect x="175" y="215" width="50" height="10" fill="#6b4412" rx="2" />
-                </svg>
+              <div className="relative w-full aspect-video overflow-hidden bg-[#1a1614] article-card-thumb">
+                <img
+                  src="public/Bai-4.jpg"
+                  alt="Bìa bài báo phóng sự SGGP 4"
+                  className="w-full h-full object-cover block transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div className="p-4 flex flex-col flex-1">
                 <div className="flex items-center mb-1.5">
@@ -902,10 +825,10 @@ export const ReportInfographicArticle: React.FC = () => {
                   </span>
                 </div>
                 <h3 className="article-card-title title-serif text-base font-bold leading-snug my-1.5 text-[#181513] transition-colors">
-                  Đồng lòng trước lời hứa thiêng liêng
+                  Mong có ngày được đón mẹ trở về
                 </h3>
                 <p className="text-xs text-[#6e665e] leading-relaxed mb-4 flex-1">
-                  Mệnh lệnh từ trái tim: Cả hệ thống chính trị, toàn dân và sự hợp tác quốc tế cùng chung sức thực hiện lời hứa tri ân trước các anh hùng liệt sĩ.
+                  Gần 60 năm sau ngày mẹ hy sinh, ông Lê Chí Công, con trai Anh hùng Lực lượng vũ trang nhân dân, Liệt sĩ Lê Thị Riêng, vẫn chưa biết chính xác nơi bà yên nghỉ. Công viên mang tên mẹ đã trở thành nơi ông tìm về để tưởng nhớ và hy vọng một ngày được tìm thấy mẹ.
                 </p>
                 <div className="flex items-center justify-between pt-3 border-t border-dashed border-[#eee8dc] mt-auto">
                   <span className="text-[11px] font-semibold text-[#9b9389]">Báo SGGP</span>
@@ -928,31 +851,12 @@ export const ReportInfographicArticle: React.FC = () => {
               className="article-series-card group"
               title="Đọc Bài 5 trên Báo Sài Gòn Giải Phóng"
             >
-              <div className="relative w-full h-44 overflow-hidden bg-[#1a1614] article-card-thumb">
-                <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" className="w-full h-full block transition-transform duration-500 group-hover:scale-105">
-                  <defs>
-                    <linearGradient id="g-art-5" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#241416" />
-                      <stop offset="50%" stopColor="#3d1b22" />
-                      <stop offset="100%" stopColor="#180b0e" />
-                    </linearGradient>
-                    <linearGradient id="flag-red" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#c5221f" />
-                      <stop offset="100%" stopColor="#8a1311" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="240" fill="url(#g-art-5)" />
-                  <path d="M70,80 Q200,60 330,80 L320,165 Q200,185 80,165 Z" fill="url(#flag-red)" stroke="#ffd700" strokeWidth="1.5" strokeOpacity="0.5" />
-                  <polygon points="200,95 208,118 232,118 213,132 220,155 200,140 180,155 187,132 168,118 192,118" fill="#ffd700" />
-                  <circle cx="95" cy="175" r="9" fill="#ffffff" opacity="0.9" />
-                  <circle cx="95" cy="175" r="4" fill="#ffd572" />
-                  <circle cx="115" cy="180" r="8" fill="#ffffff" opacity="0.85" />
-                  <circle cx="115" cy="180" r="3.5" fill="#ffd572" />
-                  <circle cx="78" cy="182" r="7.5" fill="#ffffff" opacity="0.8" />
-                  <circle cx="78" cy="182" r="3" fill="#ffd572" />
-                  <path d="M280,195 Q270,150 290,120 T280,70" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" opacity="0.35" />
-                  <path d="M295,195 Q305,155 290,130 T305,80" fill="none" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" opacity="0.25" />
-                </svg>
+              <div className="relative w-full aspect-video overflow-hidden bg-[#1a1614] article-card-thumb">
+                <img
+                  src="public/Bai-5.jpg"
+                  alt="Bìa bài báo phóng sự SGGP 5"
+                  className="w-full h-full object-cover block transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div className="p-4 flex flex-col flex-1">
                 <div className="flex items-center mb-1.5">
@@ -961,10 +865,10 @@ export const ReportInfographicArticle: React.FC = () => {
                   </span>
                 </div>
                 <h3 className="article-card-title title-serif text-base font-bold leading-snug my-1.5 text-[#181513] transition-colors">
-                  Dưới cờ Tổ quốc anh về
+                  Thiếu tướng Nguyễn Thành Trung, Chính ủy Bộ Tư lệnh TPHCM: Còn thông tin là còn liệt sĩ chưa trở về...
                 </h3>
                 <p className="text-xs text-[#6e665e] leading-relaxed mb-4 flex-1">
-                  Khúc tràng ca tri ân sâu sắc, nghẹn ngào đón các anh hùng liệt sĩ trở về trong cờ đỏ sao vàng thiêng liêng và đạo lý &ldquo;Uống nước nhớ nguồn&rdquo;.
+                  Thiếu tướng Nguyễn Thành Trung, Chính ủy Bộ Tư lệnh TPHCM, Phó Trưởng ban Thường trực Ban Chỉ đạo tìm kiếm, quy tập và xác định danh tính hài cốt liệt sĩ TPHCM, khẳng định: nhiệm vụ vẫn tiếp tục, đi tìm khi còn thông tin, còn hy vọng và còn có liệt sĩ chưa trở về.
                 </p>
                 <div className="flex items-center justify-between pt-3 border-t border-dashed border-[#eee8dc] mt-auto">
                   <span className="text-[11px] font-semibold text-[#9b9389]">Báo SGGP</span>
