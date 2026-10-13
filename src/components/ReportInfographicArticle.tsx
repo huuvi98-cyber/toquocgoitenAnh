@@ -396,9 +396,9 @@ export const ReportInfographicArticle: React.FC = () => {
             {/* CỘT TRÁI: BẢN ĐỒ THỰC ĐỊA & HIỆU ỨNG NGHIÊNG 3D (7 cols) */}
             <div className="lg:col-span-7 neu-card-static p-6">
               <div className="border-b border-[#e7e1d5] pb-4 mb-5">
-                <h2 className="title-serif text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#181513] leading-tight tracking-tight">
+                <h2 className="title-serif text-xl sm:text-2xl lg:text-[1.75rem] font-extrabold text-[#181513] leading-tight tracking-tight">
                   Sơ đồ tìm kiếm, quy tập hài cốt liệt sĩ
-                  <span className="block mt-1 sm:mt-1.5 text-xl sm:text-2xl lg:text-3xl font-bold text-[#b5121b]">
+                  <span className="block mt-1 sm:mt-1.5 text-lg sm:text-xl lg:text-2xl font-bold text-[#b5121b]">
                     tại Công viên Lê Thị Riêng
                   </span>
                 </h2>
@@ -508,10 +508,10 @@ export const ReportInfographicArticle: React.FC = () => {
                     Rà soát, chuẩn hoá hơn
                   </div>
                   <div className="stat-number-gold text-2xl sm:text-3xl leading-none">
-                    {counts.reviewedHeroes.toLocaleString('vi-VN')}+
+                    {counts.reviewedHeroes.toLocaleString('vi-VN')}
                   </div>
-                  <div className="text-xs font-semibold text-[#a2681a]">
-                    liệt sĩ
+                  <div className="text-xs sm:text-sm font-bold text-[#a2681a]">
+                    Dữ liệu liệt sĩ
                   </div>
                 </div>
               </div>
