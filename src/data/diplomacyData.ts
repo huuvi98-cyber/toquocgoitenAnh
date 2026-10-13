@@ -115,10 +115,7 @@ export const TIMELINE_MILESTONES: TimelineMilestone[] = [
     imageUrl: imgMilestone0706,
     imageCaption: 'Thủ tướng Lê Minh Hưng, Bí thư Thành ủy TPHCM Trần Lưu Quang và các đồng chí nguyên lãnh đạo Đảng, Nhà nước thực hiện nghi thức di quan hài cốt về Nhà Tưởng niệm Liệt sĩ Công viên Lê Thị Riêng.',
     imageSource: 'Ảnh: MẠNH THẮNG',
-    quote: {
-      text: 'Tìm kiếm, quy tập, xác định danh tính các liệt sĩ là trách nhiệm thiêng liêng trước Tổ quốc, trước Nhân dân; là lương tri, nguyện vọng của mỗi người Việt Nam.',
-      author: 'Thông điệp chỉ đạo tại buổi lễ',
-    },
+    
     metrics: [
       { label: 'Đơn vị tổ chức', value: 'Ban Chỉ đạo QG, TPHCM & QK7' },
       { label: 'Tính chất sự kiện', value: 'Lễ xuất quân trọng thể' },
@@ -147,7 +144,7 @@ export const TIMELINE_MILESTONES: TimelineMilestone[] = [
     id: 'm-2026-06-23-to-10-05',
     year: '23-6-2026 đến 5-10-2026',
     title: 'Phát hiện, quy tập 731 hài cốt liệt sĩ',
-    subtitle: 'Kết quả hơn 3 tháng nỗ lực liên tục trên hiện trường',
+    subtitle: 'Kết quả hơn 3 tháng nỗ lực liên tục tại thực địa.',
     category: 'ket-qua',
     categoryLabel: 'Kết quả quy tập',
     summary: 'Từ ngày 23-6 đến hết ngày 5-10-2026: các lực lượng đã phát hiện, quy tập được 731 hài cốt liệt sĩ.',
@@ -169,7 +166,7 @@ export const TIMELINE_MILESTONES: TimelineMilestone[] = [
     category: 'an-tang',
     categoryLabel: 'Truy điệu & An táng',
     summary: 'Tổ chức trọng thể lễ truy điệu, an táng hài cốt liệt sĩ quy tập tại Công viên Lê Thị Riêng.',
-    details: 'Ngày 14-10-2026, tổ chức truy điệu, an táng hài cốt liệt sĩ quy tập tại Công viên Lê Thị Riêng. Lễ truy điệu và an táng diễn ra trong không khí trang nghiêm, xúc động, thể hiện sự tri ân sâu sắc của Đảng, Nhà nước và Nhân dân đối với các anh hùng liệt sĩ đã cống hiến trọn đời mình cho độc lập, tự do của Tổ quốc.',
+    details: 'Ngày 14-10-2026, Ban Chỉ đạo về tìm kiếm, quy tập và xác định danh tính hài cốt liệt sĩ TPHCM tổ chức lễ viếng, truy điệu, an táng hài cốt liệt sĩ quy tập tại Công viên Lê Thị Riêng. Buổi lễ thể hiện sự tri ân sâu sắc của Đảng, Nhà nước và Nhân dân đối với các anh hùng liệt sĩ đã cống hiến trọn đời mình cho độc lập, tự do của Tổ quốc.',
     imageUrl: imgMilestone1014,
     imageCaption: 'Lễ truy điệu và an táng hài cốt liệt sĩ quy tập tại Công viên Lê Thị Riêng, ngày 14-10-2026.',
     imageSource: 'Ảnh: MẠNH THẮNG',

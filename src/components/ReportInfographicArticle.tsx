@@ -522,9 +522,9 @@ export const ReportInfographicArticle: React.FC = () => {
             <div className="lg:col-span-7 neu-card-static p-6">
               <div className="border-b border-[#e7e1d5] pb-4 mb-5">
                 <h2 className="title-serif text-xl sm:text-2xl lg:text-[1.75rem] font-extrabold text-[#181513] leading-tight tracking-tight">
-                  Sơ đồ tìm kiếm, quy tập hài cốt liệt sĩ
+                  
                   <span className="block mt-1 sm:mt-1.5 text-lg sm:text-xl lg:text-2xl font-bold text-[#b5121b]">
-                    tại Công viên Lê Thị Riêng
+                    Sơ đồ tìm kiếm, quy tập hài cốt liệt sĩ tại Công viên Lê Thị Riêng
                   </span>
                 </h2>
               </div>

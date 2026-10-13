@@ -130,20 +130,11 @@ export const ChapterTimeline: React.FC = () => {
               </div>
             </div>
 
-            {/* Photo Caption & Source Attribution Bar - Chú thích ảnh font không chân (font-sans) */}
-            {(selectedMilestone.imageCaption || selectedMilestone.imageSource) && (
-              <div className="px-5 sm:px-6 py-2.5 border-b border-stone-100 bg-stone-50/50 text-xs sm:text-sm text-stone-700 flex flex-col sm:flex-row sm:items-baseline justify-between gap-3">
-                {selectedMilestone.imageCaption && (
-                  <div className="flex items-start gap-2 italic leading-relaxed text-stone-700 font-sans">
-                    <Camera className="w-3.5 h-3.5 text-stone-400 shrink-0 mt-0.5 not-italic" />
-                    <span>{selectedMilestone.imageCaption}</span>
-                  </div>
-                )}
-                {selectedMilestone.imageSource && (
-                  <span className="font-sans font-medium text-stone-500 text-xs shrink-0 self-start sm:self-auto not-italic tracking-wide">
-                    {selectedMilestone.imageSource}
-                  </span>
-                )}
+            {/* Photo Caption Bar - Chỉ hiển thị chú thích nội dung ảnh (đã bỏ trích nguồn) */}
+            {selectedMilestone.imageCaption && (
+              <div className="px-5 sm:px-6 py-2.5 border-b border-stone-100 bg-stone-50/50 text-xs sm:text-sm text-stone-700 flex items-start gap-2 italic leading-relaxed font-sans">
+                <Camera className="w-3.5 h-3.5 text-stone-400 shrink-0 mt-0.5 not-italic" />
+                <span>{selectedMilestone.imageCaption}</span>
               </div>
             )}
 
