@@ -15,18 +15,18 @@ export const ReportInfographicArticle: React.FC = () => {
 
   // Bộ đếm số tự động (Count-up animation)
   const [counts, setCounts] = useState({
-    adnGroups: 0,
-    surveyLocations: 0,
-    reviewedHeroes: 0,
-    totalRemains: 0,
-    singleRemains: 0,
-    massRemains: 0,
-    artifactRemains: 0,
-    massGravesTotal: 0,
-    areaAGraves: 0,
-    areaBGraves: 0,
-    samplesTotal: 0,
-    samplesQualified: 0,
+    adnGroups: 12,
+    surveyLocations: 12,
+    reviewedHeroes: 134700,
+    totalRemains: 731,
+    singleRemains: 698,
+    massRemains: 33,
+    artifactRemains: 307,
+    massGravesTotal: 8,
+    areaAGraves: 2,
+    areaBGraves: 6,
+    samplesTotal: 9854,
+    samplesQualified: 7104,
   });
 
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -46,7 +46,7 @@ export const ReportInfographicArticle: React.FC = () => {
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.01, rootMargin: '100px 0px 100px 0px' }
     );
 
     if (sectionRef.current) {
