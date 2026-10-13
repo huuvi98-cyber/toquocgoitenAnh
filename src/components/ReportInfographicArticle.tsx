@@ -491,9 +491,9 @@ export const ReportInfographicArticle: React.FC = () => {
                   </span>
                 </h3>
               </div>
-              {/* Thẻ 1: Lực lượng lấy mẫu & Rà soát */}
+              {/* Thẻ: Lực lượng lấy mẫu & Khảo sát địa điểm */}
               <div className="neu-card p-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-3.5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   <div className="neu-inset p-4 flex items-center gap-3">
                     <div className="stat-number-gold text-3xl sm:text-4xl leading-none shrink-0">
                       {counts.adnGroups}
@@ -512,7 +512,10 @@ export const ReportInfographicArticle: React.FC = () => {
                     </div>
                   </div>
                 </div>
+              </div>
 
+              {/* Thẻ riêng: Rà soát chuẩn hoá dữ liệu liệt sĩ */}
+              <div className="neu-card p-6">
                 <div className="neu-inset p-4 border-t-3 border-[#a2681a] bg-[#fdf8ee] flex items-center justify-between flex-wrap gap-2">
                   <div className="text-sm sm:text-base font-bold text-[#181513]">
                     Rà soát, chuẩn hoá hơn
@@ -527,46 +530,29 @@ export const ReportInfographicArticle: React.FC = () => {
               </div>
 
               {/* Thẻ 2: 731 Hài cốt liệt sĩ đã tìm thấy */}
-              <div
-                className="neu-card p-6 cursor-pointer"
-                onClick={() => setRemainsExpanded(!remainsExpanded)}
-              >
+              <div className="neu-card p-6">
                 <div className="flex items-baseline justify-between mb-2">
                   <div className="stat-number text-5xl leading-none">
                     {counts.totalRemains}
                   </div>
                   <div className="neu-inset px-3 py-1 text-xs font-bold text-[#c5221f] bg-[#fdf3f2] border border-[#f8c8c6] rounded-full">
-                    Tính đến ngày 5-10
+                    Tính đến ngày 8-10
                   </div>
                 </div>
 
-                <p className="text-base font-bold text-[#181513] leading-snug mb-2">
+                <p className="text-base font-bold text-[#181513] leading-snug mb-4">
                   Tổng số hài cốt liệt sĩ đã tìm thấy
                 </p>
 
-                <div className="flex items-center justify-between pt-2 border-t border-dashed border-[#dcd4c7] text-xs font-bold text-[#c5221f]">
-                  <span>
-                    {remainsExpanded
-                      ? 'Chạm để thu gọn 3 chỉ số thành phần'
-                      : 'Chạm để xem 3 chỉ số thành phần'}
-                  </span>
-                  <span
-                    className={`inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#f1ebe1] transition-transform duration-300 ${
-                      remainsExpanded ? 'rotate-180 bg-[#c5221f] text-white' : ''
-                    }`}
-                  >
-                    ▾
-                  </span>
-                </div>
-
-                {/* 3 chỉ số thành phần */}
-                {remainsExpanded && (
-                  <div className="mt-3.5 grid grid-cols-3 gap-2.5">
+                {/* Các chỉ số thành phần (Luôn hiển thị trực quan) */}
+                <div className="flex flex-col gap-3 pt-3 border-t border-dashed border-[#dcd4c7]">
+                  {/* Hàng 1: Hài cốt riêng lẻ & Hài cốt tại mộ tập thể */}
+                  <div className="grid grid-cols-2 gap-3">
                     <div className="neu-inset p-3 text-center">
                       <div className="stat-number-dark text-xl sm:text-2xl">
                         {counts.singleRemains}
                       </div>
-                      <div className="text-[11px] sm:text-xs font-semibold text-[#6e665e] mt-1">
+                      <div className="text-xs font-semibold text-[#6e665e] mt-1">
                         Hài cốt riêng lẻ
                       </div>
                     </div>
@@ -575,23 +561,23 @@ export const ReportInfographicArticle: React.FC = () => {
                       <div className="stat-number text-xl sm:text-2xl">
                         {counts.massRemains}
                       </div>
-                      <div className="text-[11px] sm:text-xs font-bold text-[#c5221f] mt-1">
+                      <div className="text-xs font-bold text-[#c5221f] mt-1">
                         Hài cốt tại mộ tập thể
                       </div>
                     </div>
+                  </div>
 
-                    <div className="neu-inset p-3 text-center border border-[#a2681a]/35 bg-[#fdf8ee]">
-                      <div className="stat-number-gold text-xl sm:text-2xl">
-                        {counts.artifactRemains}
-                      </div>
-                      <div className="text-[11px] sm:text-xs font-semibold text-[#a2681a] mt-1">
-                        Hài cốt có di vật kèm theo
-                      </div>
+                  {/* Ô riêng biệt: Hài cốt có di vật kèm theo */}
+                  <div className="neu-inset p-3.5 border border-[#a2681a]/40 bg-[#fdf8ee] flex items-center justify-between px-4">
+                    <div className="stat-number-gold text-2xl sm:text-3xl leading-none">
+                      {counts.artifactRemains}
+                    </div>
+                    <div className="text-xs sm:text-sm font-bold text-[#a2681a] text-right">
+                      Hài cốt có di vật kèm theo
                     </div>
                   </div>
-                )}
+                </div>
               </div>
-
               {/* Thẻ 3: 8 Vị trí mộ tập thể được phát hiện */}
               <div
                 className="neu-card p-6 cursor-pointer"
