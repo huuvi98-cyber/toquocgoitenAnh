@@ -306,9 +306,9 @@ export const ReportInfographicArticle: React.FC = () => {
           <RedSilkBackground />
         </div>
 
-        <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-[1750px] w-full mx-auto px-4 sm:px-6 lg:px-8">
           {/* Lưới 5 bài báo SGGP */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-5">
             {/* THẺ 1: BÀI 1 — CHẠY ĐUA VỚI THỜI GIAN */}
             <a
               href="https://www.sggp.org.vn/nhung-ngay-o-cong-vien-le-thi-rieng-post875904.html"
@@ -508,6 +508,46 @@ export const ReportInfographicArticle: React.FC = () => {
                 </div>
               </div>
             </a>
+            {/* THẺ 6: BÀI 6 — DƯỚI CỜ TỔ QUỐC, ANH VỀ */}
+            <a
+              href="https://www.sggp.org.vn/duoi-co-to-quoc-anh-ve-post876618.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="article-series-card group"
+              title="Đọc Bài 6 trên Báo Sài Gòn Giải Phóng"
+            >
+              <div className="relative w-full aspect-video overflow-hidden bg-[#1a1614] article-card-thumb">
+                <img
+                  src="public/duoi-co-to-quoc-anh-ve.jpg"
+                  alt="Bìa bài báo phóng sự SGGP 6"
+                  className="w-full h-full object-cover block transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-4 flex flex-col flex-1">
+                <div className="flex items-center mb-1.5">
+                  <span className="text-[11px] font-extrabold text-[#c5221f] bg-[#fdf3f2] border border-[#f8c8c6] px-2 py-0.5 rounded tracking-wider">
+                    BÀI 6
+                  </span>
+                </div>
+                <h3 className="article-card-title title-serif text-base font-bold leading-snug my-1.5 text-[#181513] transition-colors">
+                  Dưới cờ Tổ quốc, Anh về
+                </h3>
+                <p className="text-xs text-[#6e665e] leading-relaxed mb-4 flex-1">
+                  731 người con ưu tú từng nằm lại trong lòng đất Công viên Lê Thị Riêng đã trở về trong vòng tay của Tổ quốc và nhân dân. Sự trở về ấy không thể lấp đầy những năm tháng xa cách, nhưng mang lại cho người đã khuất một nơi yên nghỉ trang nghiêm, để lòng người ở lại vơi bớt phần day dứt.
+                </p>
+                <div className="flex items-center justify-between pt-3 border-t border-dashed border-[#eee8dc] mt-auto">
+                  <span className="text-[11px] font-semibold text-[#9b9389]">Báo SGGP</span>
+                  <span className="article-read-btn px-2.5 py-1 rounded text-xs font-bold text-[#c5221f] bg-[#fdf3f2] border border-[#f8c8c6] inline-flex items-center gap-1 transition-all">
+                    Đọc bài
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </a>
+
           </div>
         </div>
       </section>
