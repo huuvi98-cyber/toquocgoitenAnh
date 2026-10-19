@@ -518,7 +518,7 @@ export const ReportInfographicArticle: React.FC = () => {
             >
               <div className="relative w-full aspect-video overflow-hidden bg-[#1a1614] article-card-thumb">
                 <img
-                  src="public/duoi-co-to-quoc-anh-ve.jpg"
+                  src="/duoi-co-to-quoc-anh-ve.jpg"
                   alt="Bìa bài báo phóng sự SGGP 6"
                   className="w-full h-full object-cover block transition-transform duration-500 group-hover:scale-105"
                 />
